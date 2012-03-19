@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QX.MessageHost", "QX.MessageHost\QX.MessageHost.csproj", "{5A35B04D-3FF1-45EB-98D4-3450A9E3F2E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QX.IMessage", "QX.IMessage\QX.IMessage.csproj", "{33E3199A-23AA-4990-A0B6-10461C1FD32F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QX.GSMModem", "QX.GSMModem\QX.GSMModem.csproj", "{4EFA7133-2BBF-4847-AF52-9ED87B6E0087}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QX.MessageHostCol", "QX.MessageHostCol\QX.MessageHostCol.csproj", "{56436B7B-EFC1-4AE5-92FC-D322B76AE4AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A35B04D-3FF1-45EB-98D4-3450A9E3F2E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A35B04D-3FF1-45EB-98D4-3450A9E3F2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A35B04D-3FF1-45EB-98D4-3450A9E3F2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A35B04D-3FF1-45EB-98D4-3450A9E3F2E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E3199A-23AA-4990-A0B6-10461C1FD32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E3199A-23AA-4990-A0B6-10461C1FD32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E3199A-23AA-4990-A0B6-10461C1FD32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E3199A-23AA-4990-A0B6-10461C1FD32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFA7133-2BBF-4847-AF52-9ED87B6E0087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFA7133-2BBF-4847-AF52-9ED87B6E0087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFA7133-2BBF-4847-AF52-9ED87B6E0087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFA7133-2BBF-4847-AF52-9ED87B6E0087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56436B7B-EFC1-4AE5-92FC-D322B76AE4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56436B7B-EFC1-4AE5-92FC-D322B76AE4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56436B7B-EFC1-4AE5-92FC-D322B76AE4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56436B7B-EFC1-4AE5-92FC-D322B76AE4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

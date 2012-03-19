@@ -1,0 +1,8 @@
+﻿1103--1、ProdTask表添加字段：Task_RefInv, Prod_CodeMap表 PMap_TaskCode,PMap_TaskDate,Raw_Inv表 RI_RefRawCode,RI_RefDetailCode
+1107--1、添加表Failure_Relation
+1109-1、字典 ProdStatEnum  
+1114-1、SD_Detail 添加字段SD_PRRelation  配置表GCDetail  添加
+1115-1、CForm_FHBatchNode   2、生产进度工序列表隐藏是否已质检
+1116-1、GNodes  sys。funtion
+
+GRProdRoads  --->

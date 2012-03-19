@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD41FE41-242F-4AF7-9FC9-A41C70B004AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QX.DataModel</RootNamespace>
+    <AssemblyName>QX.DataModel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\System.ComponentModel.DataAnnotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audit_Template.cs" />
+    <Compile Include="Bse_Attachments.cs" />
+    <Compile Include="Bse_Department.cs" />
+    <Compile Include="Bse_Dict.cs" />
+    <Compile Include="Bse_Employee.cs" />
+    <Compile Include="Bse_EmployeeExt.cs" />
+    <Compile Include="Bse_Equ.cs" />
+    <Compile Include="Bse_Feedback.cs" />
+    <Compile Include="Bse_FeedDetail.cs" />
+    <Compile Include="Bse_OpLog.cs" />
+    <Compile Include="BSE_SysInfo.cs" />
+    <Compile Include="DataModelExtend\Audit_info.cs" />
+    <Compile Include="DataModelExtend\Inv_Information.cs" />
+    <Compile Include="DataModelExtend\Prod_CodeMap.cs" />
+    <Compile Include="DataModelExtend\Prod_PlanProd.cs" />
+    <Compile Include="DataModelExtend\Prod_Task.cs" />
+    <Compile Include="DataModelExtend\Raw_Inv.cs" />
+    <Compile Include="DataModelExtend\Road_Components.cs" />
+    <Compile Include="DataModelExtend\Sys_Function.cs" />
+    <Compile Include="DataModelExtend\Verify_TemplateConfig.cs" />
+    <Compile Include="Failure_Information.cs" />
+    <Compile Include="Failure_Process.cs" />
+    <Compile Include="Failure_Relation.cs" />
+    <Compile Include="FHelper_Info.cs" />
+    <Compile Include="FHelper_ManuList.cs" />
+    <Compile Include="FHelper_Out.cs" />
+    <Compile Include="FHelper_Price.cs" />
+    <Compile Include="Inv_Information.cs" />
+    <Compile Include="Inv_Movement.cs" />
+    <Compile Include="ManHour_Verify.cs" />
+    <Compile Include="Prod_CmdDetail.cs" />
+    <Compile Include="Prod_CodeMap.cs" />
+    <Compile Include="Prod_Command.cs" />
+    <Compile Include="Prod_Failure.cs" />
+    <Compile Include="Prod_FinnalReport.cs" />
+    <Compile Include="Prod_Patch.cs" />
+    <Compile Include="Prod_Plan.cs" />
+    <Compile Include="Prod_PlanProd.cs" />
+    <Compile Include="Prod_Record.cs" />
+    <Compile Include="Prod_Roads.cs" />
+    <Compile Include="Prod_Task.cs" />
+    <Compile Include="Prod_TaskDetail.cs" />
+    <Compile Include="Prod_TestRef.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raw_Detail.cs" />
+    <Compile Include="Raw_Inv.cs" />
+    <Compile Include="Raw_Main.cs" />
+    <Compile Include="Road_Components.cs" />
+    <Compile Include="Road_Nodes.cs" />
+    <Compile Include="Road_TestRef.cs" />
+    <Compile Include="SD_CDetail.cs" />
+    <Compile Include="SD_Contract.cs" />
+    <Compile Include="SD_ContractTrace.cs" />
+    <Compile Include="SD_ContractValue.cs" />
+    <Compile Include="SD_CRProdCode.cs" />
+    <Compile Include="SD_Customer.cs" />
+    <Compile Include="SD_Finance.cs" />
+    <Compile Include="Sys_Control.cs" />
+    <Compile Include="Sys_DictKey.cs" />
+    <Compile Include="Sys_Function.cs" />
+    <Compile Include="Sys_Map.cs" />
+    <Compile Include="Sys_PD_Filed.cs" />
+    <Compile Include="Sys_PD_GridFormat.cs" />
+    <Compile Include="Sys_PD_Module.cs" />
+    <Compile Include="Sys_PD_RefModule.cs" />
+    <Compile Include="Sys_Role.cs" />
+    <Compile Include="Sys_UserPermission.cs" />
+    <Compile Include="UserRelationData.cs" />
+    <Compile Include="VerifyProcess_Records.cs" />
+    <Compile Include="Verify_Nodes.cs" />
+    <Compile Include="Verify_TemplateConfig.cs" />
+    <Compile Include="Verify_Users.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QX.Common\QX.Common.csproj">
+      <Project>{FB3F7914-E3E4-4007-9EB1-9E4645F150A5}</Project>
+      <Name>QX.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attribute\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

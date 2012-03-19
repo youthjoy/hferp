@@ -1,0 +1,5 @@
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.GSMModem\bin\Release\QX.GSMModem.dll
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.GSMModem\bin\Release\QX.GSMModem.pdb
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.GSMModem\obj\Release\ResolveAssemblyReference.cache
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.GSMModem\obj\Release\QX.GSMModem.dll
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.GSMModem\obj\Release\QX.GSMModem.pdb

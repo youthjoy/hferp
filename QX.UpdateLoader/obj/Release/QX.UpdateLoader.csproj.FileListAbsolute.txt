@@ -1,0 +1,16 @@
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.UpdateLoader.exe
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.UpdateLoader.pdb
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.Common.dll
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.UpdateModel.dll
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.PluginFramework.dll
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.IMessage.dll
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\Elixis.dll
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.PluginFramework.pdb
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.Common.pdb
+E:\TFS\HFERP2\QX.UpdateLoader\bin\Release\QX.UpdateModel.pdb
+E:\TFS\HFERP2\QX.UpdateLoader\obj\Release\ResolveAssemblyReference.cache
+E:\TFS\HFERP2\QX.UpdateLoader\obj\Release\QX.UpdateLoader.DownloadProgress.resources
+E:\TFS\HFERP2\QX.UpdateLoader\obj\Release\QX.UpdateLoader.Properties.Resources.resources
+E:\TFS\HFERP2\QX.UpdateLoader\obj\Release\QX.UpdateLoader.csproj.GenerateResource.Cache
+E:\TFS\HFERP2\QX.UpdateLoader\obj\Release\QX.UpdateLoader.exe
+E:\TFS\HFERP2\QX.UpdateLoader\obj\Release\QX.UpdateLoader.pdb

@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[QX.BseDict.csproj]
+SCC_Aux_Path = "\\192.168.1.222\vssdb"
+SCC_Project_Name = "$/HF_ERP.V2/HF_ERP/QX.BseDict", JRDAAAAA
+
+[QX.Bse.csproj]
+SCC_Aux_Path = "\\192.168.1.222\vssdb"
+SCC_Project_Name = "$/HF_ERP.V2/HF_ERP/QX.BseDict", JRDAAAAA

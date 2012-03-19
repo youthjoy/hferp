@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FeedBackDB" targetNamespace="http://tempuri.org/FeedBackDB.xsd" xmlns:mstns="http://tempuri.org/FeedBackDB.xsd" xmlns="http://tempuri.org/FeedBackDB.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MacDConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MacDConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QX.Plugin.Prod.Properties.Settings.GlobalReference.Default.MacDConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VRpt_FeedBackTableAdapter" GeneratorDataComponentClassName="VRpt_FeedBackTableAdapter" Name="VRpt_FeedBack" UserDataComponentName="VRpt_FeedBackTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MacDConnectionString1 (Settings)" DbObjectName="MacD.dbo.VRpt_FeedBack" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FB_ID, FB_Code, FB_Customer, FB_CustomerName, FB_Contact, FB_Mobile, FB_Content, FB_Date, FB_RespDept, FB_RespDeptName, FB_Level, FB_Cate, FB_CateOther, FB_Reason, FB_ReasonOther, FB_Handle, Stat, CreateTime, UpdateTime FROM dbo.VRpt_FeedBack</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FB_ID" DataSetColumn="FB_ID" />
+              <Mapping SourceColumn="FB_Code" DataSetColumn="FB_Code" />
+              <Mapping SourceColumn="FB_Customer" DataSetColumn="FB_Customer" />
+              <Mapping SourceColumn="FB_CustomerName" DataSetColumn="FB_CustomerName" />
+              <Mapping SourceColumn="FB_Contact" DataSetColumn="FB_Contact" />
+              <Mapping SourceColumn="FB_Mobile" DataSetColumn="FB_Mobile" />
+              <Mapping SourceColumn="FB_Content" DataSetColumn="FB_Content" />
+              <Mapping SourceColumn="FB_Date" DataSetColumn="FB_Date" />
+              <Mapping SourceColumn="FB_RespDept" DataSetColumn="FB_RespDept" />
+              <Mapping SourceColumn="FB_RespDeptName" DataSetColumn="FB_RespDeptName" />
+              <Mapping SourceColumn="FB_Level" DataSetColumn="FB_Level" />
+              <Mapping SourceColumn="FB_Cate" DataSetColumn="FB_Cate" />
+              <Mapping SourceColumn="FB_CateOther" DataSetColumn="FB_CateOther" />
+              <Mapping SourceColumn="FB_Reason" DataSetColumn="FB_Reason" />
+              <Mapping SourceColumn="FB_ReasonOther" DataSetColumn="FB_ReasonOther" />
+              <Mapping SourceColumn="FB_Handle" DataSetColumn="FB_Handle" />
+              <Mapping SourceColumn="Stat" DataSetColumn="Stat" />
+              <Mapping SourceColumn="CreateTime" DataSetColumn="CreateTime" />
+              <Mapping SourceColumn="UpdateTime" DataSetColumn="UpdateTime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FeedBackDB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="FeedBackDB" msprop:Generator_UserDSName="FeedBackDB" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VRpt_FeedBack" msprop:Generator_UserTableName="VRpt_FeedBack" msprop:Generator_RowDeletedName="VRpt_FeedBackRowDeleted" msprop:Generator_TableClassName="VRpt_FeedBackDataTable" msprop:Generator_RowChangedName="VRpt_FeedBackRowChanged" msprop:Generator_RowClassName="VRpt_FeedBackRow" msprop:Generator_RowChangingName="VRpt_FeedBackRowChanging" msprop:Generator_RowEvArgName="VRpt_FeedBackRowChangeEvent" msprop:Generator_RowEvHandlerName="VRpt_FeedBackRowChangeEventHandler" msprop:Generator_TablePropName="VRpt_FeedBack" msprop:Generator_TableVarName="tableVRpt_FeedBack" msprop:Generator_RowDeletingName="VRpt_FeedBackRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FB_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="FB_ID" msprop:Generator_ColumnPropNameInRow="FB_ID" msprop:Generator_ColumnVarNameInTable="columnFB_ID" msprop:Generator_ColumnPropNameInTable="FB_IDColumn" type="xs:decimal" />
+              <xs:element name="FB_Code" msprop:Generator_UserColumnName="FB_Code" msprop:Generator_ColumnPropNameInRow="FB_Code" msprop:Generator_ColumnVarNameInTable="columnFB_Code" msprop:Generator_ColumnPropNameInTable="FB_CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Customer" msprop:Generator_UserColumnName="FB_Customer" msprop:Generator_ColumnPropNameInRow="FB_Customer" msprop:Generator_ColumnVarNameInTable="columnFB_Customer" msprop:Generator_ColumnPropNameInTable="FB_CustomerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_CustomerName" msprop:Generator_UserColumnName="FB_CustomerName" msprop:Generator_ColumnPropNameInRow="FB_CustomerName" msprop:Generator_ColumnVarNameInTable="columnFB_CustomerName" msprop:Generator_ColumnPropNameInTable="FB_CustomerNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Contact" msprop:Generator_UserColumnName="FB_Contact" msprop:Generator_ColumnPropNameInRow="FB_Contact" msprop:Generator_ColumnVarNameInTable="columnFB_Contact" msprop:Generator_ColumnPropNameInTable="FB_ContactColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Mobile" msprop:Generator_UserColumnName="FB_Mobile" msprop:Generator_ColumnPropNameInRow="FB_Mobile" msprop:Generator_ColumnVarNameInTable="columnFB_Mobile" msprop:Generator_ColumnPropNameInTable="FB_MobileColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Content" msprop:Generator_UserColumnName="FB_Content" msprop:Generator_ColumnPropNameInRow="FB_Content" msprop:Generator_ColumnVarNameInTable="columnFB_Content" msprop:Generator_ColumnPropNameInTable="FB_ContentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Date" msprop:Generator_UserColumnName="FB_Date" msprop:Generator_ColumnPropNameInRow="FB_Date" msprop:Generator_ColumnVarNameInTable="columnFB_Date" msprop:Generator_ColumnPropNameInTable="FB_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FB_RespDept" msprop:Generator_UserColumnName="FB_RespDept" msprop:Generator_ColumnPropNameInRow="FB_RespDept" msprop:Generator_ColumnVarNameInTable="columnFB_RespDept" msprop:Generator_ColumnPropNameInTable="FB_RespDeptColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_RespDeptName" msprop:Generator_UserColumnName="FB_RespDeptName" msprop:Generator_ColumnPropNameInRow="FB_RespDeptName" msprop:Generator_ColumnVarNameInTable="columnFB_RespDeptName" msprop:Generator_ColumnPropNameInTable="FB_RespDeptNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Level" msprop:Generator_UserColumnName="FB_Level" msprop:Generator_ColumnPropNameInRow="FB_Level" msprop:Generator_ColumnVarNameInTable="columnFB_Level" msprop:Generator_ColumnPropNameInTable="FB_LevelColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Cate" msprop:Generator_UserColumnName="FB_Cate" msprop:Generator_ColumnPropNameInRow="FB_Cate" msprop:Generator_ColumnVarNameInTable="columnFB_Cate" msprop:Generator_ColumnPropNameInTable="FB_CateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_CateOther" msprop:Generator_UserColumnName="FB_CateOther" msprop:Generator_ColumnPropNameInRow="FB_CateOther" msprop:Generator_ColumnVarNameInTable="columnFB_CateOther" msprop:Generator_ColumnPropNameInTable="FB_CateOtherColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Reason" msprop:Generator_UserColumnName="FB_Reason" msprop:Generator_ColumnPropNameInRow="FB_Reason" msprop:Generator_ColumnVarNameInTable="columnFB_Reason" msprop:Generator_ColumnPropNameInTable="FB_ReasonColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_ReasonOther" msprop:Generator_UserColumnName="FB_ReasonOther" msprop:Generator_ColumnPropNameInRow="FB_ReasonOther" msprop:Generator_ColumnVarNameInTable="columnFB_ReasonOther" msprop:Generator_ColumnPropNameInTable="FB_ReasonOtherColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FB_Handle" msprop:Generator_UserColumnName="FB_Handle" msprop:Generator_ColumnPropNameInRow="FB_Handle" msprop:Generator_ColumnVarNameInTable="columnFB_Handle" msprop:Generator_ColumnPropNameInTable="FB_HandleColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stat" msprop:Generator_UserColumnName="Stat" msprop:Generator_ColumnPropNameInRow="Stat" msprop:Generator_ColumnVarNameInTable="columnStat" msprop:Generator_ColumnPropNameInTable="StatColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CreateTime" msprop:Generator_UserColumnName="CreateTime" msprop:Generator_ColumnPropNameInRow="CreateTime" msprop:Generator_ColumnVarNameInTable="columnCreateTime" msprop:Generator_ColumnPropNameInTable="CreateTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateTime" msprop:Generator_UserColumnName="UpdateTime" msprop:Generator_ColumnPropNameInRow="UpdateTime" msprop:Generator_ColumnVarNameInTable="columnUpdateTime" msprop:Generator_ColumnPropNameInTable="UpdateTimeColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VRpt_FeedBack" />
+      <xs:field xpath="mstns:FB_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

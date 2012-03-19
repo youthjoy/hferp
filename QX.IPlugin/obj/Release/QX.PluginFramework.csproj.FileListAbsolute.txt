@@ -1,0 +1,10 @@
+E:\Code\Project\TFS_HF\QX.IPlugin\bin\Release\QX.PluginFramework.dll
+E:\Code\Project\TFS_HF\QX.IPlugin\bin\Release\QX.PluginFramework.pdb
+E:\Code\Project\TFS_HF\QX.IPlugin\obj\Release\ResolveAssemblyReference.cache
+E:\Code\Project\TFS_HF\QX.IPlugin\obj\Release\QX.PluginFramework.dll
+E:\Code\Project\TFS_HF\QX.IPlugin\obj\Release\QX.PluginFramework.pdb
+E:\TFS\HFERP2\QX.IPlugin\bin\Release\QX.PluginFramework.dll
+E:\TFS\HFERP2\QX.IPlugin\bin\Release\QX.PluginFramework.pdb
+E:\TFS\HFERP2\QX.IPlugin\obj\Release\ResolveAssemblyReference.cache
+E:\TFS\HFERP2\QX.IPlugin\obj\Release\QX.PluginFramework.dll
+E:\TFS\HFERP2\QX.IPlugin\obj\Release\QX.PluginFramework.pdb

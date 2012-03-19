@@ -1,0 +1,1072 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C25E7B09-6BE8-4B89-BC3D-689CA7BB87EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QX.Plugin.Prod</RootNamespace>
+    <AssemblyName>QX.Plugin.Prod</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\QX.UI\bin\Debug\AddIns\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Infragistics2.Shared.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.Misc.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinCalcManager.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinChart.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinListView.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.UltraWinSpellChecker.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="Infragistics2.Win.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics3.Excel.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics3.Win.UltraWinGrid.ExcelExport.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ProdHelper.cs" />
+    <Compile Include="Component\AuditedRoadNodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\AuditedRoadNodes.Designer.cs">
+      <DependentUpon>AuditedRoadNodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\CLog.cs" />
+    <Compile Include="Component\CompOpLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\CompOpLog.Designer.cs">
+      <DependentUpon>CompOpLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\CopyRoadComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\CopyRoadComponent.Designer.cs">
+      <DependentUpon>CopyRoadComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RoadCate.cs" />
+    <Compile Include="Component\RoadCateManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\RoadCateManage.Designer.cs">
+      <DependentUpon>RoadCateManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RoadComponents.cs" />
+    <Compile Include="Component\RoadComptInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\RoadComptInfo.Designer.cs">
+      <DependentUpon>RoadComptInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RoadComptMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\RoadComptMaintain.Designer.cs">
+      <DependentUpon>RoadComptMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RoadNode.cs" />
+    <Compile Include="Component\RoadNodesManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\RoadNodesManage.Designer.cs">
+      <DependentUpon>RoadNodesManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RoadNodesTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\RoadNodesTemplate.Designer.cs">
+      <DependentUpon>RoadNodesTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RoadTest.cs" />
+    <Compile Include="Component\RoadTestManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\RoadTestManage.Designer.cs">
+      <DependentUpon>RoadTestManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\BatchEleMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\BatchEleMain.Designer.cs">
+      <DependentUpon>BatchEleMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack\FeedBack.cs" />
+    <Compile Include="FeedBack\FeedBackMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedBack\FeedBackMain.Designer.cs">
+      <DependentUpon>FeedBackMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack\FeedBackOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedBack\FeedBackOp.Designer.cs">
+      <DependentUpon>FeedBackOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHelper\BatchConfirmSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHelper\BatchConfirmSup.Designer.cs">
+      <DependentUpon>BatchConfirmSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHelper\BatchIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHelper\BatchIn.Designer.cs">
+      <DependentUpon>BatchIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHelper\FHelperSupSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHelper\FHelperSupSel.Designer.cs">
+      <DependentUpon>FHelperSupSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHelper\FHelperOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHelper\FHelperOp.Designer.cs">
+      <DependentUpon>FHelperOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProdCmd\ProdCodeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProdCmd\ProdCodeList.Designer.cs">
+      <DependentUpon>ProdCodeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\BatchFailureOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\BatchFailureOp.Designer.cs">
+      <DependentUpon>BatchFailureOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\BatchFHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\BatchFHelper.Designer.cs">
+      <DependentUpon>BatchFHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\BatchNodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\BatchNodes.Designer.cs">
+      <DependentUpon>BatchNodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\BatchProdInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\BatchProdInfo.Designer.cs">
+      <DependentUpon>BatchProdInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ComControl\ComInfoSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ComControl\ComInfoSel.Designer.cs">
+      <DependentUpon>ComInfoSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ComControl\FailureProdHandle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ComControl\FailureProdHandle.Designer.cs">
+      <DependentUpon>FailureProdHandle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ComControl\FSupSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ComControl\FSupSel.Designer.cs">
+      <DependentUpon>FSupSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\CommInfoHandle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\CommInfoHandle.Designer.cs">
+      <DependentUpon>CommInfoHandle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\CancelFailure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\CancelFailure.Designer.cs">
+      <DependentUpon>CancelFailure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ComControl\ProdCodeSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ComControl\ProdCodeSel.Designer.cs">
+      <DependentUpon>ProdCodeSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\FailureOpEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\FailureOpEx.Designer.cs">
+      <DependentUpon>FailureOpEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ImportRoads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ImportRoads.Designer.cs">
+      <DependentUpon>ImportRoads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ProdPatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ProdPatch.Designer.cs">
+      <DependentUpon>ProdPatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ProdPathOp.cs" />
+    <Compile Include="Prod\ComControl\ProdStatSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ComControl\ProdStatSel.Designer.cs">
+      <DependentUpon>ProdStatSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RawMain\RawProdCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RawMain\RawProdCode.Designer.cs">
+      <DependentUpon>RawProdCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CDetailTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CDetailTrace.Designer.cs">
+      <DependentUpon>CDetailTrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommEqu.cs" />
+    <Compile Include="Report\CommFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommFinance.Designer.cs">
+      <DependentUpon>CommFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommOnTrash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommOnTrash.Designer.cs">
+      <DependentUpon>CommOnTrash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommRptContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommRptContract.Designer.cs">
+      <DependentUpon>CommRptContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommRptDetail.cs" />
+    <Compile Include="Report\CommRptEqu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommRptEqu.Designer.cs">
+      <DependentUpon>CommRptEqu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommRptFinNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommRptFinNode.Designer.cs">
+      <DependentUpon>CommRptFinNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommRptNodes.cs" />
+    <Compile Include="Report\CommRptPDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommRptPDetail.Designer.cs">
+      <DependentUpon>CommRptPDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommTrash.cs" />
+    <Compile Include="Report\CommTrashList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommTrashList.Designer.cs">
+      <DependentUpon>CommTrashList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ComRptContract.cs" />
+    <Compile Include="Report\DB_Ticket_CMD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_Ticket_CMD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device.cs" />
+    <Compile Include="Device\DeviceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\DeviceInfo.Designer.cs">
+      <DependentUpon>DeviceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DeviceManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\DeviceManage.Designer.cs">
+      <DependentUpon>DeviceManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DFailureMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\DFailureMain.Designer.cs">
+      <DependentUpon>DFailureMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\DFailureOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\DFailureOp.Designer.cs">
+      <DependentUpon>DFailureOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\FDevice.cs" />
+    <Compile Include="FHelper\FHelperAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHelper\FHelperAdmin.Designer.cs">
+      <DependentUpon>FHelperAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHelper\FHelperManage.cs" />
+    <Compile Include="FHelper\FHelperPriceMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHelper\FHelperPriceMain.Designer.cs">
+      <DependentUpon>FHelperPriceMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHelper\FHelper_Price.cs" />
+    <Compile Include="FHelper\FHelperMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHelper\FHelperMain.Designer.cs">
+      <DependentUpon>FHelperMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHelper\FHPriceOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHelper\FHPriceOp.Designer.cs">
+      <DependentUpon>FHPriceOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\FProdCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\FProdCode.Designer.cs">
+      <DependentUpon>FProdCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\LastCheck.cs" />
+    <Compile Include="Prod\LastCheckMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\LastCheckMain.Designer.cs">
+      <DependentUpon>LastCheckMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProdCmd\ProductCmd.cs" />
+    <Compile Include="ProdCmd\ProductCmdAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProdCmd\ProductCmdAdmin.Designer.cs">
+      <DependentUpon>ProductCmdAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProdCmd\ProductCmdMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProdCmd\ProductCmdMain.Designer.cs">
+      <DependentUpon>ProductCmdMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\AjustProdPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\AjustProdPlan.Designer.cs">
+      <DependentUpon>AjustProdPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\DeployPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\DeployPlan.Designer.cs">
+      <DependentUpon>DeployPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\DeployTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\DeployTask.Designer.cs">
+      <DependentUpon>DeployTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\FailureHandle.cs" />
+    <Compile Include="Prod\FailureMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\FailureMain.Designer.cs">
+      <DependentUpon>FailureMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\FailureOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\FailureOp.Designer.cs">
+      <DependentUpon>FailureOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ProdPlan.cs" />
+    <Compile Include="Prod\ProdPlanMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ProdPlanMain.Designer.cs">
+      <DependentUpon>ProdPlanMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ProdRecord.cs" />
+    <Compile Include="Prod\ProdRecordMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ProdRecordMain.Designer.cs">
+      <DependentUpon>ProdRecordMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\ProdTask.cs" />
+    <Compile Include="Prod\ProdTaskMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\ProdTaskMain.Designer.cs">
+      <DependentUpon>ProdTaskMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\RptViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\RptViewer.Designer.cs">
+      <DependentUpon>RptViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\TimeControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\TimeControl.Designer.cs">
+      <DependentUpon>TimeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prod\SetFinishTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\SetFinishTask.Designer.cs">
+      <DependentUpon>SetFinishTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RawMain\RawInvMain.cs" />
+    <Compile Include="RawMain\RawInvList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RawMain\RawInvList.Designer.cs">
+      <DependentUpon>RawInvList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RawMain\RawInvOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RawMain\RawInvOp.Designer.cs">
+      <DependentUpon>RawInvOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RawMain\RawOrderListInfo.cs" />
+    <Compile Include="RawMain\RawOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RawMain\RawOrderList.Designer.cs">
+      <DependentUpon>RawOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RawMain\RawRecAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RawMain\RawRecAdmin.Designer.cs">
+      <DependentUpon>RawRecAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommPRoads.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommPRoads.Designer.cs">
+      <DependentUpon>CommPRoads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommProding.cs" />
+    <Compile Include="Report\CommProdingSum.cs" />
+    <Compile Include="Report\CommProdingSumMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommProdingSumMain.Designer.cs">
+      <DependentUpon>CommProdingSumMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommPSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommPSum.Designer.cs">
+      <DependentUpon>CommPSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommPSumMain.cs" />
+    <Compile Include="Report\CommRpt.cs" />
+    <Compile Include="Report\CommRptProding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommRptProding.Designer.cs">
+      <DependentUpon>CommRptProding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommRptWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommRptWin.Designer.cs">
+      <DependentUpon>CommRptWin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FeedBackDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeedBackDB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportViews.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportViews.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptFail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptFail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptFailure1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptFailure.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptFailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptFailView.Designer.cs">
+      <DependentUpon>RptFailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptFBView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptFBView.Designer.cs">
+      <DependentUpon>RptFBView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RptHourView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptHourView.Designer.cs">
+      <DependentUpon>RptHourView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\RPTTest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPTTest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\RptTicketCmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\RptTicketCmd.Designer.cs">
+      <DependentUpon>RptTicketCmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Rpt_Customers_Feedback.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Customers_Feedback.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Fail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Fail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Failure_Audit.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Failure_Audit.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Ticket_CMD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Ticket_CMD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt_Ticket_Hours.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Ticket_Hours.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReturnDoc\ReturnDocAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnDoc\ReturnDocAdmin.Designer.cs">
+      <DependentUpon>ReturnDocAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnDoc\ReturnDoc.cs" />
+    <Compile Include="ReturnDoc\ReturnDocMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnDoc\ReturnDocMain.Designer.cs">
+      <DependentUpon>ReturnDocMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\ComptInv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\ComptInv.Designer.cs">
+      <DependentUpon>ComptInv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\InvDetail.cs" />
+    <Compile Include="Stock\InvInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\InvInfo.Designer.cs">
+      <DependentUpon>InvInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\InvMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\InvMaintain.Designer.cs">
+      <DependentUpon>InvMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\InvOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\InvOut.Designer.cs">
+      <DependentUpon>InvOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\StockIn.Designer.cs">
+      <DependentUpon>StockIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prod\TestRefList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prod\TestRefList.Designer.cs">
+      <DependentUpon>TestRefList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\QX.BLL\QX.BLL.csproj">
+      <Project>{8479AAA5-4F2B-49E0-8B70-A93D14184ADA}</Project>
+      <Name>QX.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.BseDict\QX.Bse.csproj">
+      <Project>{D30AFD1E-0082-4BC8-854A-884BF522B6CF}</Project>
+      <Name>QX.Bse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.Common\QX.Common.csproj">
+      <Project>{FB3F7914-E3E4-4007-9EB1-9E4645F150A5}</Project>
+      <Name>QX.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.DataModel\QX.DataModel.csproj">
+      <Project>{AD41FE41-242F-4AF7-9FC9-A41C70B004AC}</Project>
+      <Name>QX.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.Framework.AutoForm\QX.Framework.AutoForm.csproj">
+      <Project>{82F2605E-9493-4C3E-A01C-4C75C936A72A}</Project>
+      <Name>QX.Framework.AutoForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.IPlugin\QX.PluginFramework.csproj">
+      <Project>{ECE6349B-67ED-446D-ADD3-30ECE84EBB93}</Project>
+      <Name>QX.PluginFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.Log\QX.Log.csproj">
+      <Project>{1C128DB1-7EFC-4BE0-B981-7F98CB171C42}</Project>
+      <Name>QX.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.Shared\QX.Shared\QX.Shared.csproj">
+      <Project>{20170E8C-B3C9-46AB-BFB2-8EDAB9043631}</Project>
+      <Name>QX.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Component\AuditedRoadNodes.resx">
+      <DependentUpon>AuditedRoadNodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\CompOpLog.resx">
+      <DependentUpon>CompOpLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\CopyRoadComponent.resx">
+      <DependentUpon>CopyRoadComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RoadCateManage.resx">
+      <DependentUpon>RoadCateManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RoadComptInfo.resx">
+      <DependentUpon>RoadComptInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RoadComptMaintain.resx">
+      <DependentUpon>RoadComptMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RoadNodesManage.resx">
+      <DependentUpon>RoadNodesManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RoadNodesTemplate.resx">
+      <DependentUpon>RoadNodesTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RoadTestManage.resx">
+      <DependentUpon>RoadTestManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\BatchEleMain.resx">
+      <DependentUpon>BatchEleMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\DeviceInfo.resx">
+      <DependentUpon>DeviceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\DeviceManage.resx">
+      <DependentUpon>DeviceManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\DFailureMain.resx">
+      <DependentUpon>DFailureMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\DFailureOp.resx">
+      <DependentUpon>DFailureOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBack\FeedBackMain.resx">
+      <DependentUpon>FeedBackMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedBack\FeedBackOp.resx">
+      <DependentUpon>FeedBackOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHelper\BatchConfirmSup.resx">
+      <DependentUpon>BatchConfirmSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHelper\BatchIn.resx">
+      <DependentUpon>BatchIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHelper\FHelperAdmin.resx">
+      <DependentUpon>FHelperAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHelper\FHelperPriceMain.resx">
+      <DependentUpon>FHelperPriceMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHelper\FHelperMain.resx">
+      <DependentUpon>FHelperMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHelper\FHelperSupSel.resx">
+      <DependentUpon>FHelperSupSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHelper\FHPriceOp.resx">
+      <DependentUpon>FHPriceOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHelper\FHelperOp.resx">
+      <DependentUpon>FHelperOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdCmd\ProdCodeList.resx">
+      <DependentUpon>ProdCodeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdCmd\ProductCmdAdmin.resx">
+      <DependentUpon>ProductCmdAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProdCmd\ProductCmdMain.resx">
+      <DependentUpon>ProductCmdMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\AjustProdPlan.resx">
+      <DependentUpon>AjustProdPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\BatchFailureOp.resx">
+      <DependentUpon>BatchFailureOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\BatchFHelper.resx">
+      <DependentUpon>BatchFHelper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\BatchNodes.resx">
+      <DependentUpon>BatchNodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\BatchProdInfo.resx">
+      <DependentUpon>BatchProdInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ComControl\ComInfoSel.resx">
+      <DependentUpon>ComInfoSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ComControl\FailureProdHandle.resx">
+      <DependentUpon>FailureProdHandle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ComControl\FSupSel.resx">
+      <DependentUpon>FSupSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ComControl\ProdStatSel.resx">
+      <DependentUpon>ProdStatSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\CommInfoHandle.resx">
+      <DependentUpon>CommInfoHandle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\CancelFailure.resx">
+      <DependentUpon>CancelFailure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ComControl\ProdCodeSel.resx">
+      <DependentUpon>ProdCodeSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\DeployPlan.resx">
+      <DependentUpon>DeployPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\DeployTask.resx">
+      <DependentUpon>DeployTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\FailureMain.resx">
+      <DependentUpon>FailureMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\FailureOp.resx">
+      <DependentUpon>FailureOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\FailureOpEx.resx">
+      <DependentUpon>FailureOpEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\FProdCode.resx">
+      <DependentUpon>FProdCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ImportRoads.resx">
+      <DependentUpon>ImportRoads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\LastCheckMain.resx">
+      <DependentUpon>LastCheckMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ProdPatch.resx">
+      <DependentUpon>ProdPatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ProdPlanMain.resx">
+      <DependentUpon>ProdPlanMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ProdRecordMain.resx">
+      <DependentUpon>ProdRecordMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\ProdTaskMain.resx">
+      <DependentUpon>ProdTaskMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\RptViewer.resx">
+      <DependentUpon>RptViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\TimeControl.resx">
+      <DependentUpon>TimeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Prod\SetFinishTask.resx">
+      <DependentUpon>SetFinishTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RawMain\RawInvList.resx">
+      <DependentUpon>RawInvList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RawMain\RawInvOp.resx">
+      <DependentUpon>RawInvOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RawMain\RawOrderList.resx">
+      <DependentUpon>RawOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RawMain\RawProdCode.resx">
+      <DependentUpon>RawProdCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RawMain\RawRecAdmin.resx">
+      <DependentUpon>RawRecAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CDetailTrace.resx">
+      <DependentUpon>CDetailTrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommFinance.resx">
+      <DependentUpon>CommFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommOnTrash.resx">
+      <DependentUpon>CommOnTrash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommPRoads.resx">
+      <DependentUpon>CommPRoads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommProdingSumMain.resx">
+      <DependentUpon>CommProdingSumMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommPSum.resx">
+      <DependentUpon>CommPSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommRptContract.resx">
+      <DependentUpon>CommRptContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommRptEqu.resx">
+      <DependentUpon>CommRptEqu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommRptFinNode.resx">
+      <DependentUpon>CommRptFinNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommRptPDetail.resx">
+      <DependentUpon>CommRptPDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommRptProding.resx">
+      <DependentUpon>CommRptProding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommRptWin.resx">
+      <DependentUpon>CommRptWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommTrashList.resx">
+      <DependentUpon>CommTrashList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptFailure.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptFailure1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptFailView.resx">
+      <DependentUpon>RptFailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptFBView.resx">
+      <DependentUpon>RptFBView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptHourView.resx">
+      <DependentUpon>RptHourView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RPTTest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPTTest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptTicketCmd.resx">
+      <DependentUpon>RptTicketCmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_Customers_Feedback.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Customers_Feedback.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_Fail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Fail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_Failure_Audit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Failure_Audit.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_Ticket_CMD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Ticket_CMD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt_Ticket_Hours.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Ticket_Hours.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnDoc\ReturnDocAdmin.resx">
+      <DependentUpon>ReturnDocAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnDoc\ReturnDocMain.resx">
+      <DependentUpon>ReturnDocMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\ComptInv.resx">
+      <DependentUpon>ComptInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\InvInfo.resx">
+      <DependentUpon>InvInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\InvMaintain.resx">
+      <DependentUpon>InvMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\InvOut.resx">
+      <DependentUpon>InvOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\StockIn.resx">
+      <DependentUpon>StockIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prod\TestRefList.resx">
+      <DependentUpon>TestRefList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Report\DB_Ticket_CMD.xsc">
+      <DependentUpon>DB_Ticket_CMD.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DB_Ticket_CMD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_Ticket_CMD.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\DB_Ticket_CMD.xss">
+      <DependentUpon>DB_Ticket_CMD.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\FeedBackDB.xsc">
+      <DependentUpon>FeedBackDB.xsd</DependentUpon>
+    </None>
+    <None Include="Report\FeedBackDB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeedBackDB.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\FeedBackDB.xss">
+      <DependentUpon>FeedBackDB.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ReportViews.xsc">
+      <DependentUpon>ReportViews.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ReportViews.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportViews.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\ReportViews.xss">
+      <DependentUpon>ReportViews.xsd</DependentUpon>
+    </None>
+    <None Include="Report\RptFail.xsc">
+      <DependentUpon>RptFail.xsd</DependentUpon>
+    </None>
+    <None Include="Report\RptFail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RptFail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\RptFail.xss">
+      <DependentUpon>RptFail.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

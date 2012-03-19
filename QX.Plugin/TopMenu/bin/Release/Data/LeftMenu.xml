@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LeftMenu>
+  <MenuItem id="JiChuDangAn" label="基础档案"  data="daaa"  shortcut="" icon="" class="" type="menu" pid="" path=""/>
+  <MenuItem id="DanWeiXingXi" label="基本信息" data="daaa"  shortcut="" icon="" class="QX.Plugin.SystemInfo.SystemInfo" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="BuMenuXingXi" label="部门人员" data="daaa"  shortcut="" icon="" class="QX.Plugin.DeptManage.DeptManage" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="ChangePassOp" label="个人密码维护" data="daaa"  shortcut="" icon="" class="QX.Plugin.BaseModule.Permission.ChangePassOp" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="Device" label="设备信息"  data="daaa"  shortcut="" icon="test.gif" class="QX.Plugin.DeviceManage.Device" type="menu" pid="JiChuDangAn" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="EquCate" label="设备分类"  data="EquCate|设备分类"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="EquStat" label="设备状态"  data="EquStat|设备状态"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+
+
+  <MenuItem id="Failure" label="故障分类"  data="FailureCat|故障分类"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="GenderCat" label="性别维护"  data="GenderCat|性别维护"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="TiTleCat" label="职称维护"  data="TitleCat|职称维护"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="DutyCat" label="职务维护"  data="DutyCat|职务维护"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  
+  <MenuItem id="FailHandType" label="不合格品处理方法"  data="FailHandType|不合格品处理方法"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+  
+  
+  <!--<MenuItem id="Test" label="测试"  data="Cust"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommRpt" type="menu" pid="JiChuDangAn" path="QX.Plugin.Prod.dll"/>-->
+  <MenuItem id="RoadNodeAudit" label="工时单价"  data="RoadNode|工艺节点管理|RoadNodeAudit"  shortcut="" icon="test.gif" class="QX.Plugin.BaseModule.Dict.ComDictOp" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+
+  <MenuItem id="Road" label="零件维护"  data="daaa"  shortcut="" icon="test.gif" class="" type="menu" pid="" path=""/>
+
+  <MenuItem id="RoadCompt" label="零件图号维护"  data="daaa"  shortcut="" icon="test.gif" class="QX.Plugin.RoadCateManage.RoadComponents" type="menu" pid="Road" path="QX.Plugin.Prod.dll"/>
+  <!--<MenuItem id="RoadComptLog" label="测试报表"  data="GComponents|qx_rpt_test|Comp"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommRpt" type="menu" pid="Road" path="QX.Plugin.Prod.dll"/>-->
+  <!--<MenuItem id="RoadComptLog" label="零件图号操作日志"  data="Road_Components|CList_OpLog"  shortcut="" icon="test.gif" class="QX.Plugin.Prod.Component.CLog" type="menu" pid="Road" path="QX.Plugin.Prod.dll"/>-->
+  <MenuItem id="RoadCate" label="产品类别"  data="daaa"  shortcut="" icon="test.gif" class="QX.Plugin.RoadCateManage.RoadCate" type="menu" pid="Road" path="QX.Plugin.Prod.dll"/>
+
+  <!--<MenuItem id="RoadNode" label="工艺节点管理"  data="daaa"  shortcut="" icon="test.gif" class="QX.Plugin.RoadCateManage.RoadNode" type="menu" pid="Road" path="QX.Plugin.Prod.dll"/>-->
+  <MenuItem id="RoadNode" label="加工工序维护"  data="RoadNode|加工工序维护|RoadNode"  shortcut="" icon="test.gif" class="QX.Plugin.BaseModule.Dict.ComDictOp" type="menu" pid="Road" path="QX.Plugin.BaseModule.dll"/>
+
+  <MenuItem id="RoadHandle" label="加工类型"  data="RoadHandle|加工类型"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="JiChuDangAn" path="QX.Plugin.BaseModule.dll"/>
+
+  <!--<MenuItem id="RoadTest" label="检测部位管理"  data="daaa"  shortcut="" icon="test.gif" class="QX.Plugin.RoadCateManage.RoadTest" type="menu" pid="Road" path="QX.Plugin.Prod.dll"/>-->
+
+  <MenuItem id="InvInfo" label="库存管理"  data="daaa"  shortcut="" icon="test.gif" class="" type="menu" pid="" path=""/>
+  <MenuItem id="InvDetail" label="成品库存"  data="daaa"  shortcut="" icon="test.gif" class="QX.Plugin.InvInfo.InvDetail" type="menu" pid="InvInfo" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="ProdInvInfo" label="产品库存报表"  data="CList_ProdInv|qx_rpt_list|Inv|库存报表"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommRpt" type="menu" pid="InvInfo" path="QX.Plugin.Prod.dll"/>
+
+
+  <MenuItem id="HeTongGuanLi" label="合同管理" data="daaa"  shortcut="" icon="" class="QX.Plugin.Contract.Customers" type="menu" pid="" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="CustTypeOp" label="客户类型"  data="CustType|客户类型"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="HeTongGuanLi" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="CustInfo" label="客户档案" data="GCustomer"  shortcut="" icon="" class="QX.Plugin.Contract.Customers" type="menu" pid="HeTongGuanLi" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="SupTypeOp" label="供应商类型"  data="SupType|供应商类型"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="HeTongGuanLi" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="SupInfo" label="供应商档案" data="GSup"  shortcut="" icon="" class="QX.Plugin.Contract.Customers" type="menu" pid="HeTongGuanLi" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="HeTongMingXi" label="合同档案" data="daaa"  shortcut="" icon="" class="QX.Plugin.Contract.Contract" type="menu" pid="HeTongGuanLi" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="ContractType" label="合同类型"  data="ContractType|合同类型"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="HeTongGuanLi" path="QX.Plugin.BaseModule.dll"/>
+
+  <MenuItem id="Audit" label="审核管理"  data="daaa"  shortcut="" icon="test.gif" class="" type="menu" pid="" path=""/>
+
+  <MenuItem id="SheneHe" label="审核流程配置" data="daaa"  shortcut="" icon="" class="QX.Plugin.VerifyProcess.VerifyProcess" type="menu" pid="Audit" path="QX.Plugin.BaseModule.dll"/>
+
+  <MenuItem id="ProductCmdManage" label="生产指令管理"  data="daaa"  shortcut="" icon="test.gif" class="" type="menu" pid="" path=""/>
+  <MenuItem id="ProductCmd" label="生产指令"  data="thisia"  shortcut="" icon="test.gif" class="QX.Plugin.RawInfo.ProductCmd" type="menu" pid="ProductCmdManage" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="CmdDetail" label="指令明细查询"  data="Rpt_CmdDetail|qx_rpt_cmd|CmdDetail|生产指令明细列表"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommRpt" type="menu" pid="ProductCmdManage" path="QX.Plugin.Prod.dll"/>
+  
+  
+  <MenuItem id="RawInfo" label="毛坯管理"  data="daaa"  shortcut="" icon="test.gif" class="" type="menu" pid="" path=""/>
+  <MenuItem id="RawOrderList" label="毛坯采购"  data="thisia"  shortcut="" icon="test.gif" class="QX.Plugin.RawMain.RawOrderListInfo" type="menu" pid="RawInfo" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="RawInvList" label="毛坯库存"  data="thisia"  shortcut="" icon="test.gif" class="QX.Plugin.RawMain.RawInvMain" type="menu" pid="RawInfo" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="RawInvDetail" label="毛坯入库明细"  data="Rpt_RawDetail|qx_rpt_RawIn|Rpt_RawDetail|毛坯入库明细"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommRpt" type="menu" pid="RawInfo" path="QX.Plugin.Prod.dll"/>
+  
+  
+  <MenuItem id="Product" label="生产管理"  data="daaa"  shortcut="" icon="test.gif" class="" type="menu" pid="" path=""/>
+
+  <MenuItem id="ProdTask" label="生产任务管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.Prod.ProdTask" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="ProdPlan" label="生产计划管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.Prod.ProdPlan" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="ProdRecord" label="生产进度管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.Prod.ProdRecord" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <!--<MenuItem id="LastCheck" label="终检管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.Prod.LastCheck" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>-->
+  <MenuItem id="FailureHandle" label="不合格品管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.Prod.FailureHandle" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="ProdPatch" label="组合配对管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.Prod.ProdPatchOp" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="FDevice" label="设备故障记录"  data="daaa"  shortcut="" icon="test.gif" class="QX.Plugin.DeviceManage.FDevice" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="FFailure" label="设备故障汇总"  data="CList_FFailure|qx_rpt_equfailure|EquFailure|设备故障汇总"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommEqu" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  
+  <MenuItem id="Proding" label="在制品台账"  data="CList_Proding|qx_rpt_proding|Proding|在制品报表"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommProding" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="ProdingSum" label="在制品台账汇总"  data="CList_Proding|qx_rpt_prodingsum|ProdingSum|在制品汇总报表"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommProdingSum" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="PSum" label="设备生产统计表"  data="CList_PSum|qx_rpt_prodsum|PSum|设备生产统计表"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommPSumMain" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="FProd" label="完工台账"  data="CList_FProd|qx_rpt_fprod|FProd|完工台账"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommRpt" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="ProdDetail" label="生产进度明细"  data="Rpt_RGProdPlan|qx_rpt_list|ProdDetail|生产进度明细"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommRptDetail" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="NodeQuery" label="工序计件查询"  data="CList_FinNode|qx_rpt_finishnode|FinNode|工序计件金额查询"  shortcut="" icon="test.gif" class="QX.Plugin.Report.CommRptNodes" type="menu" pid="Product" path="QX.Plugin.Prod.dll"/>
+  
+  <MenuItem id="FHelper" label="外协管理"  data="daaa"  shortcut="" icon="test.gif" class="" type="menu" pid="" path=""/>
+  <MenuItem id="FHelperTypeOp" label="外协厂商类型"  data="FHelperType"  shortcut="" icon="test.gif" class="QX.Plugin.Dict.Dict" type="menu" pid="FHelper" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="FHelperInfo" label="外协厂商档案" data="GFHelper"  shortcut="" icon="" class="QX.Plugin.Contract.Customers" type="menu" pid="FHelper" path="QX.Plugin.BaseModule.dll"/>
+  <MenuItem id="FHelperManage" label="外协单据管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.FHelper.FHelperManage" type="menu" pid="FHelper" path="QX.Plugin.Prod.dll"/>
+  <MenuItem id="FHelperPrice" label="外协价格管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.FHelper.FHelper_Price" type="menu" pid="FHelper" path="QX.Plugin.Prod.dll"/>
+
+  <MenuItem id="ReturnDoc" label="退货管理"  data="daaa"  shortcut="" icon="test.gif" class="" type="menu" pid="" path=""/>
+  <MenuItem id="ReturnDocMain" label="退货信息管理"  data="dd"  shortcut="" icon="test.gif" class="QX.Plugin.ReturnDoc.ReturnDoc" type="menu" pid="ReturnDoc" path="QX.Plugin.Prod.dll"/>
+
+</LeftMenu>

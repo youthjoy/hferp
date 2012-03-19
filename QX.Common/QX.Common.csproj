@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB3F7914-E3E4-4007-9EB1-9E4645F150A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QX.Common</RootNamespace>
+    <AssemblyName>QX.Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elixis, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Shared.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.SupportDialogs.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinPrintPreviewDialog.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="QX.IMessage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C_Class\Alert.cs" />
+    <Compile Include="C_Class\CollectionHelper.cs" />
+    <Compile Include="C_Class\Encryp.cs" />
+    <Compile Include="C_Class\ExcelHelper.cs" />
+    <Compile Include="C_Class\Ftp.cs" />
+    <Compile Include="C_Class\GridHandler.cs" />
+    <Compile Include="C_Class\GSMHelper.cs" />
+    <Compile Include="C_Class\GSMModem.cs" />
+    <Compile Include="C_Class\InIHepler.cs" />
+    <Compile Include="C_Class\MessageTypeEnum.cs" />
+    <Compile Include="C_Class\MetaReflection.cs" />
+    <Compile Include="C_Class\PermissionModule.cs" />
+    <Compile Include="C_Class\PrintHelper.cs" />
+    <Compile Include="C_Class\ReadInIConfigruation.cs" />
+    <Compile Include="C_Class\ReturnResultEnum.cs" />
+    <Compile Include="C_Class\SerializationHelper.cs" />
+    <Compile Include="C_Class\Singleton.cs" />
+    <Compile Include="C_Class\ToolStripHelper.cs" />
+    <Compile Include="C_Class\Utils\TypeConverter.cs" />
+    <Compile Include="C_Class\Utils\Utils.cs" />
+    <Compile Include="C_Class\Utils\Validator.cs" />
+    <Compile Include="C_Class\ValidateControlHelper.cs" />
+    <Compile Include="C_Form\CommAttachments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_Form\CommAttachments.Designer.cs">
+      <DependentUpon>CommAttachments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\CommInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_Form\CommInventory.Designer.cs">
+      <DependentUpon>CommInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\CommonProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\CommonProd.Designer.cs">
+      <DependentUpon>CommonProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\CommonToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C_Form\CommonToolBar.Designer.cs">
+      <DependentUpon>CommonToolBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\CommDept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\CommDept.Designer.cs">
+      <DependentUpon>CommDept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Class\BindModelHelper.cs" />
+    <Compile Include="C_Class\ConvertX.cs" />
+    <Compile Include="C_Class\DictHelper.cs" />
+    <Compile Include="C_Class\GlobalConfiguration.cs" />
+    <Compile Include="C_Class\DynCompile.cs" />
+    <Compile Include="C_Class\ObjectCache.cs" />
+    <Compile Include="C_Class\OperationTypeEnum.cs" />
+    <Compile Include="C_Class\StringHelper.cs" />
+    <Compile Include="C_Class\TreeHelper.cs" />
+    <Compile Include="C_Class\WinformHelper.cs" />
+    <Compile Include="C_Class\XmlHelper.cs" />
+    <Compile Include="C_Form\CommRoadCate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\CommRoadCate.Designer.cs">
+      <DependentUpon>CommRoadCate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\CommUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\CommUser.Designer.cs">
+      <DependentUpon>CommUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\CommCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\CommCustomer.Designer.cs">
+      <DependentUpon>CommCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\F_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\F_About.Designer.cs">
+      <DependentUpon>F_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\F_BasciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\F_BasciForm.Designer.cs">
+      <DependentUpon>F_BasciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\F_Basic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\F_Basic.Designer.cs">
+      <DependentUpon>F_Basic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\F_BasicPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\F_BasicPop.Designer.cs">
+      <DependentUpon>F_BasicPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\MSGCon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\MSGCon.Designer.cs">
+      <DependentUpon>MSGCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Form\MSGShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\MSGShow.Designer.cs">
+      <DependentUpon>MSGShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Class\Plugin.cs" />
+    <Compile Include="C_Form\SystemHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Form\SystemHelp.Designer.cs">
+      <DependentUpon>SystemHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogModule.cs" />
+    <Compile Include="MetaInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="C_Form\CommAttachments.resx">
+      <DependentUpon>CommAttachments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\CommInventory.resx">
+      <DependentUpon>CommInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\CommonProd.resx">
+      <DependentUpon>CommonProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\CommonToolBar.resx">
+      <DependentUpon>CommonToolBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\CommDept.resx">
+      <DependentUpon>CommDept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\CommRoadCate.resx">
+      <DependentUpon>CommRoadCate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\CommUser.resx">
+      <DependentUpon>CommUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\CommCustomer.resx">
+      <DependentUpon>CommCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\F_About.resx">
+      <DependentUpon>F_About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\F_BasciForm.resx">
+      <DependentUpon>F_BasciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\F_BasicPop.resx">
+      <DependentUpon>F_BasicPop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\MSGCon.resx">
+      <DependentUpon>MSGCon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\MSGShow.resx">
+      <DependentUpon>MSGShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Form\SystemHelp.resx">
+      <DependentUpon>SystemHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QX.IPlugin\QX.PluginFramework.csproj">
+      <Project>{ECE6349B-67ED-446D-ADD3-30ECE84EBB93}</Project>
+      <Name>QX.PluginFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\AxInterop.CELL50Lib.dll" />
+    <Content Include="DLL\Elixis.dll" />
+    <None Include="Resources\add.png" />
+    <Content Include="DLL\log4net.dll" />
+    <Content Include="DLL\QX.IMessage.dll" />
+    <Content Include="Resources\audit.png" />
+    <Content Include="Resources\batch.png" />
+    <None Include="Resources\busy.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\compedit.png" />
+    <Content Include="Resources\copy.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\edit.png" />
+    <Content Include="Resources\finished.png" />
+    <Content Include="Resources\gantan.png" />
+    <Content Include="Resources\history.png" />
+    <Content Include="Resources\import.png" />
+    <None Include="Resources\in.png" />
+    <Content Include="Resources\inventory.png" />
+    <Content Include="Resources\inventoryin.png" />
+    <Content Include="Resources\inventoryout.png" />
+    <Content Include="Resources\look.png" />
+    <Content Include="Resources\manage.png" />
+    <Content Include="Resources\nodes.png" />
+    <Content Include="Resources\OK.png" />
+    <Content Include="Resources\parts.png" />
+    <Content Include="Resources\patch.png" />
+    <Content Include="Resources\planner.png" />
+    <Content Include="Resources\save.png" />
+    <Content Include="Resources\schedule.png" />
+    <None Include="Resources\急.jpg" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

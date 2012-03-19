@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D4FFE80A-A1B4-497C-ABD1-80A647DABFD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QX.Plugin.Dict</RootNamespace>
+    <AssemblyName>QX.Plugin.Dict</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\QX.UI\bin\Debug\AddIns\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DutyDictStart.cs" />
+    <Compile Include="TitleDictStart.cs" />
+    <Compile Include="GendarDictStart.cs" />
+    <Compile Include="DutyDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DutyDict.Designer.cs">
+      <DependentUpon>DutyDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitleDict.Designer.cs">
+      <DependentUpon>TitleDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GendarDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GendarDict.Designer.cs">
+      <DependentUpon>GendarDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dict.cs" />
+    <Compile Include="DictWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DictWindow.Designer.cs">
+      <DependentUpon>DictWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DutyDict.resx">
+      <DependentUpon>DutyDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleDict.resx">
+      <DependentUpon>TitleDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GendarDict.resx">
+      <DependentUpon>GendarDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DictWindow.resx">
+      <DependentUpon>DictWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\QX.BLL\QX.BLL.csproj">
+      <Project>{8479AAA5-4F2B-49E0-8B70-A93D14184ADA}</Project>
+      <Name>QX.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.BseDict\QX.BseDict.csproj">
+      <Project>{D30AFD1E-0082-4BC8-854A-884BF522B6CF}</Project>
+      <Name>QX.BseDict</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.Common\QX.Common.csproj">
+      <Project>{FB3F7914-E3E4-4007-9EB1-9E4645F150A5}</Project>
+      <Name>QX.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.IPlugin\QX.PluginFramework.csproj">
+      <Project>{ECE6349B-67ED-446D-ADD3-30ECE84EBB93}</Project>
+      <Name>QX.PluginFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.UI\QX.UI.csproj">
+      <Project>{26188CDF-3774-4792-B79F-133CF638A962}</Project>
+      <Name>QX.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DB_Ticket_CMD" targetNamespace="http://tempuri.org/DB_Ticket_CMD.xsd" xmlns:mstns="http://tempuri.org/DB_Ticket_CMD.xsd" xmlns="http://tempuri.org/DB_Ticket_CMD.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MacDConnectionString1" IsAppSettingsProperty="true" Modifier="Assembly" Name="MacDConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QX.Plugin.Prod.Properties.Settings.GlobalReference.Default.MacDConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MacDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MacDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QX.Plugin.Prod.Properties.Settings.GlobalReference.Default.MacDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VRpt_ProdCmdTableAdapter" GeneratorDataComponentClassName="VRpt_ProdCmdTableAdapter" Name="VRpt_ProdCmd" UserDataComponentName="VRpt_ProdCmdTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MacDConnectionString (Settings)" DbObjectName="MacD.dbo.VRpt_ProdCmd" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CmdDetail_PartNo, CmdDetail_PartName, CmdDetail_Num, CmdDetail_Roads, Expr2, PlanProd_Begin, PlanProd_End, PlanProd_Code FROM dbo.VRpt_ProdCmd</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CmdDetail_PartNo" DataSetColumn="CmdDetail_PartNo" />
+              <Mapping SourceColumn="CmdDetail_PartName" DataSetColumn="CmdDetail_PartName" />
+              <Mapping SourceColumn="CmdDetail_Num" DataSetColumn="CmdDetail_Num" />
+              <Mapping SourceColumn="CmdDetail_Roads" DataSetColumn="CmdDetail_Roads" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="PlanProd_Begin" DataSetColumn="PlanProd_Begin" />
+              <Mapping SourceColumn="PlanProd_End" DataSetColumn="PlanProd_End" />
+              <Mapping SourceColumn="PlanProd_Code" DataSetColumn="PlanProd_Code" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DB_Ticket_CMD" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DB_Ticket_CMD" msprop:Generator_DataSetName="DB_Ticket_CMD" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VRpt_ProdCmd" msprop:Generator_UserTableName="VRpt_ProdCmd" msprop:Generator_RowDeletedName="VRpt_ProdCmdRowDeleted" msprop:Generator_TableClassName="VRpt_ProdCmdDataTable" msprop:Generator_RowChangedName="VRpt_ProdCmdRowChanged" msprop:Generator_RowClassName="VRpt_ProdCmdRow" msprop:Generator_RowChangingName="VRpt_ProdCmdRowChanging" msprop:Generator_RowEvArgName="VRpt_ProdCmdRowChangeEvent" msprop:Generator_RowEvHandlerName="VRpt_ProdCmdRowChangeEventHandler" msprop:Generator_TablePropName="VRpt_ProdCmd" msprop:Generator_TableVarName="tableVRpt_ProdCmd" msprop:Generator_RowDeletingName="VRpt_ProdCmdRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CmdDetail_PartNo" msprop:Generator_UserColumnName="CmdDetail_PartNo" msprop:Generator_ColumnPropNameInRow="CmdDetail_PartNo" msprop:Generator_ColumnVarNameInTable="columnCmdDetail_PartNo" msprop:Generator_ColumnPropNameInTable="CmdDetail_PartNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CmdDetail_PartName" msprop:Generator_UserColumnName="CmdDetail_PartName" msprop:Generator_ColumnPropNameInRow="CmdDetail_PartName" msprop:Generator_ColumnVarNameInTable="columnCmdDetail_PartName" msprop:Generator_ColumnPropNameInTable="CmdDetail_PartNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CmdDetail_Num" msprop:Generator_UserColumnName="CmdDetail_Num" msprop:Generator_ColumnPropNameInRow="CmdDetail_Num" msprop:Generator_ColumnVarNameInTable="columnCmdDetail_Num" msprop:Generator_ColumnPropNameInTable="CmdDetail_NumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CmdDetail_Roads" msprop:Generator_UserColumnName="CmdDetail_Roads" msprop:Generator_ColumnPropNameInRow="CmdDetail_Roads" msprop:Generator_ColumnVarNameInTable="columnCmdDetail_Roads" msprop:Generator_ColumnPropNameInTable="CmdDetail_RoadsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1024" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr2" msprop:Generator_UserColumnName="Expr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" type="xs:int" minOccurs="0" />
+              <xs:element name="PlanProd_Begin" msprop:Generator_UserColumnName="PlanProd_Begin" msprop:Generator_ColumnPropNameInRow="PlanProd_Begin" msprop:Generator_ColumnVarNameInTable="columnPlanProd_Begin" msprop:Generator_ColumnPropNameInTable="PlanProd_BeginColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PlanProd_End" msprop:Generator_UserColumnName="PlanProd_End" msprop:Generator_ColumnPropNameInRow="PlanProd_End" msprop:Generator_ColumnVarNameInTable="columnPlanProd_End" msprop:Generator_ColumnPropNameInTable="PlanProd_EndColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PlanProd_Code" msprop:Generator_UserColumnName="PlanProd_Code" msprop:Generator_ColumnPropNameInRow="PlanProd_Code" msprop:Generator_ColumnVarNameInTable="columnPlanProd_Code" msprop:Generator_ColumnPropNameInTable="PlanProd_CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

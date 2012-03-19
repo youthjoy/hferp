@@ -1,0 +1,10 @@
+E:\Code\Project\TFS_HF\QX.UpdateLoader1\obj\Debug\ResolveAssemblyReference.cache
+E:\Code\Project\TFS_HF\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.DownloadProgress.resources
+E:\Code\Project\TFS_HF\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.Properties.Resources.resources
+E:\Code\Project\TFS_HF\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.csproj.GenerateResource.Cache
+E:\Code\Project\TFS_HF\QX.UpdateLoader1\bin\Debug\QX.UpdateLoader1.exe
+E:\Code\Project\TFS_HF\QX.UpdateLoader1\bin\Debug\QX.UpdateLoader1.pdb
+E:\Code\Project\TFS_HF\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.exe
+E:\Code\Project\TFS_HF\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.pdb
+E:\Code\Project\TFS_HF\QX.UI\bin\Debug\QX.UpdateLoader1.exe
+E:\Code\Project\TFS_HF\QX.UI\bin\Debug\QX.UpdateLoader1.pdb

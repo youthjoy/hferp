@@ -1,0 +1,6 @@
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.IMessage\bin\Debug\QX.IMessage.dll
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.IMessage\bin\Debug\QX.IMessage.pdb
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.IMessage\obj\Debug\ResolveAssemblyReference.cache
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.IMessage\obj\Debug\QX.IMessage.dll
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.IMessage\obj\Debug\QX.IMessage.pdb
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.IMessage\bin\Debug\QX.GSMModem.dll

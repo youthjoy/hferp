@@ -1,0 +1,13 @@
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.RawInfo.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.RawInfo.pdb
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\ResolveAssemblyReference.cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.ProductCmdAdmin.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.ProductCmdDetail.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.ProductCmdMain.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.RawDetail.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.RawMain.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.RawManage.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.csproj.GenerateResource.Cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.dll.licenses
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\RawInfo\obj\Debug\QX.Plugin.RawInfo.pdb

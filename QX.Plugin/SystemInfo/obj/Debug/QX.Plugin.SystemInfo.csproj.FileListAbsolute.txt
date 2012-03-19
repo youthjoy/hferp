@@ -1,0 +1,7 @@
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.SystemInfo.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.SystemInfo.pdb
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\SystemInfo\obj\Debug\ResolveAssemblyReference.cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\SystemInfo\obj\Debug\QX.Plugin.SystemInfo.F_SystemInfo.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\SystemInfo\obj\Debug\QX.Plugin.SystemInfo.csproj.GenerateResource.Cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\SystemInfo\obj\Debug\QX.Plugin.SystemInfo.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\SystemInfo\obj\Debug\QX.Plugin.SystemInfo.pdb

@@ -1,0 +1,12 @@
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.Contract.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.Contract.pdb
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\ResolveAssemblyReference.cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.ContractDeaitl.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.ContractManage.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.ContractOP.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.Customer.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.CustomersManage.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.csproj.GenerateResource.Cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.dll.licenses
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Contract\obj\Debug\QX.Plugin.Contract.pdb

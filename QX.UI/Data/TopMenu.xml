@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TopMenu>
+  <!--<MenuItem id="File" label="文件(&amp;F)" shortcut="" icon="" class="" type="menu" pid="" path=""/>
+  <MenuItem id="New File" label="新建文件(&amp;N)"  shortcut="" icon="test.gif" class="TestFile.cs.TestFile" type="menu" pid="File" path="TestFile.cs.dll"/>
+  <MenuItem id="Edit" label="编辑(&amp;E)" shortcut="" icon="" class="" type="menu" pid="" path=""/>
+  <MenuItem id="Edit" label="查找(&amp;S)" shortcut="" icon="" class="TestFile.cs.TestFile" type="menu" pid="Edit" path="TestFile.cs.dll"/>-->
+  <MenuItem id="Help" label="帮助(&amp;H)" shortcut="" icon="" class="" type="menu" pid="" path=""/>
+</TopMenu>

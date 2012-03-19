@@ -1,0 +1,14 @@
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\Data\TopMenu.xml
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\Data\LeftMenu.xml
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\app.config
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\Data\chinese.ini
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.Dict.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.Dict.pdb
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Dict\QX.Plugin.Dict\obj\Debug\ResolveAssemblyReference.cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Dict\QX.Plugin.Dict\obj\Debug\QX.Plugin.Dict.DutyDict.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Dict\QX.Plugin.Dict\obj\Debug\QX.Plugin.Dict.TitleDict.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Dict\QX.Plugin.Dict\obj\Debug\QX.Plugin.Dict.GendarDict.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Dict\QX.Plugin.Dict\obj\Debug\QX.Plugin.Dict.DictWindow.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Dict\QX.Plugin.Dict\obj\Debug\QX.Plugin.Dict.csproj.GenerateResource.Cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Dict\QX.Plugin.Dict\obj\Debug\QX.Plugin.Dict.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\Dict\QX.Plugin.Dict\obj\Debug\QX.Plugin.Dict.pdb

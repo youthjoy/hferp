@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB474D4D-8218-4B4B-ACD3-FADBC38FC254}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QX.Plugin.BaseModule</RootNamespace>
+    <AssemblyName>QX.Plugin.BaseModule</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\QX.UI\bin\Debug\AddIns\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics3.Excel.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics3.Win.UltraWinGrid.ExcelExport.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audit\AuditMsgHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\AuditMsgHistory.Designer.cs">
+      <DependentUpon>AuditMsgHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\CommVerifyNodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\CommVerifyNodes.Designer.cs">
+      <DependentUpon>CommVerifyNodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\Contract.cs" />
+    <Compile Include="Contract\ContractDeaitl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\ContractDeaitl.Designer.cs">
+      <DependentUpon>ContractDeaitl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContractManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\ContractManage.Designer.cs">
+      <DependentUpon>ContractManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContractOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\ContractOP.Designer.cs">
+      <DependentUpon>ContractOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContractProdRelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\ContractProdRelation.Designer.cs">
+      <DependentUpon>ContractProdRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContractRelation.cs" />
+    <Compile Include="Contract\ContractTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\ContractTrace.Designer.cs">
+      <DependentUpon>ContractTrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContractValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\ContractValue.Designer.cs">
+      <DependentUpon>ContractValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\Control\ProdCodeSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\Control\ProdCodeSel.Designer.cs">
+      <DependentUpon>ProdCodeSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\Control\TraceProdCodeSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\Control\TraceProdCodeSel.Designer.cs">
+      <DependentUpon>TraceProdCodeSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\Control\FinanceProdRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\Control\FinanceProdRef.Designer.cs">
+      <DependentUpon>FinanceProdRef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\CustomersManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\CustomersManage.Designer.cs">
+      <DependentUpon>CustomersManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\CustToSupOp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract\CustToSupOp.Designer.cs">
+      <DependentUpon>CustToSupOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dept\Dept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dept\Dept.Designer.cs">
+      <DependentUpon>Dept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dept\DeptInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dept\DeptInfo.Designer.cs">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dept\DeptManage.cs" />
+    <Compile Include="Dept\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dept\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dept\EmployeeExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dept\EmployeeExt.Designer.cs">
+      <DependentUpon>EmployeeExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dict\ComDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dict\ComDict.Designer.cs">
+      <DependentUpon>ComDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dict\ComDictOp.cs" />
+    <Compile Include="Dict\Dict.cs" />
+    <Compile Include="Dict\DictWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dict\DictWindow.Designer.cs">
+      <DependentUpon>DictWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dict\DutyDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dict\DutyDict.Designer.cs">
+      <DependentUpon>DutyDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dict\DutyDictStart.cs" />
+    <Compile Include="Dict\GendarDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dict\GendarDict.Designer.cs">
+      <DependentUpon>GendarDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dict\GendarDictStart.cs" />
+    <Compile Include="Dict\TitleDict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dict\TitleDict.Designer.cs">
+      <DependentUpon>TitleDict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dict\TitleDictStart.cs" />
+    <Compile Include="Audit\VerifyNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\VerifyNode.Designer.cs">
+      <DependentUpon>VerifyNode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\VerifyMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\VerifyMain.Designer.cs">
+      <DependentUpon>VerifyMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audit\VerifyNodeOp.cs" />
+    <Compile Include="Audit\VerifyProcess.cs" />
+    <Compile Include="Permission\ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permission\ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permission\ChangePassOp.cs" />
+    <Compile Include="Permission\FunctionMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permission\FunctionMain.Designer.cs">
+      <DependentUpon>FunctionMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permission\PermissionMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permission\PermissionMain.Designer.cs">
+      <DependentUpon>PermissionMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permission\PermissionOp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysInfo\F_SystemInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysInfo\F_SystemInfo.Designer.cs">
+      <DependentUpon>F_SystemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysInfo\SystemInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\QX.BLL\QX.BLL.csproj">
+      <Project>{8479AAA5-4F2B-49E0-8B70-A93D14184ADA}</Project>
+      <Name>QX.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QX.BseDict\QX.Bse.csproj">
+      <Project>{D30AFD1E-0082-4BC8-854A-884BF522B6CF}</Project>
+      <Name>QX.Bse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QX.Common\QX.Common.csproj">
+      <Project>{FB3F7914-E3E4-4007-9EB1-9E4645F150A5}</Project>
+      <Name>QX.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QX.DataModel\QX.DataModel.csproj">
+      <Project>{AD41FE41-242F-4AF7-9FC9-A41C70B004AC}</Project>
+      <Name>QX.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QX.Framework.AutoForm\QX.Framework.AutoForm.csproj">
+      <Project>{82F2605E-9493-4C3E-A01C-4C75C936A72A}</Project>
+      <Name>QX.Framework.AutoForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QX.IPlugin\QX.PluginFramework.csproj">
+      <Project>{ECE6349B-67ED-446D-ADD3-30ECE84EBB93}</Project>
+      <Name>QX.PluginFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QX.Log\QX.Log.csproj">
+      <Project>{1C128DB1-7EFC-4BE0-B981-7F98CB171C42}</Project>
+      <Name>QX.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\QX.Shared\QX.Shared\QX.Shared.csproj">
+      <Project>{20170E8C-B3C9-46AB-BFB2-8EDAB9043631}</Project>
+      <Name>QX.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Audit\AuditMsgHistory.resx">
+      <DependentUpon>AuditMsgHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit\CommVerifyNodes.resx">
+      <DependentUpon>CommVerifyNodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\ContractDeaitl.resx">
+      <DependentUpon>ContractDeaitl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\ContractManage.resx">
+      <DependentUpon>ContractManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\ContractOP.resx">
+      <DependentUpon>ContractOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\ContractProdRelation.resx">
+      <DependentUpon>ContractProdRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\ContractTrace.resx">
+      <DependentUpon>ContractTrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\ContractValue.resx">
+      <DependentUpon>ContractValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\Control\ProdCodeSel.resx">
+      <DependentUpon>ProdCodeSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\Control\TraceProdCodeSel.resx">
+      <DependentUpon>TraceProdCodeSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\Control\FinanceProdRef.resx">
+      <DependentUpon>FinanceProdRef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\CustomersManage.resx">
+      <DependentUpon>CustomersManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract\CustToSupOp.resx">
+      <DependentUpon>CustToSupOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dept\Dept.resx">
+      <DependentUpon>Dept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dept\DeptInfo.resx">
+      <DependentUpon>DeptInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dept\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dept\EmployeeExt.resx">
+      <DependentUpon>EmployeeExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dict\ComDict.resx">
+      <DependentUpon>ComDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dict\DictWindow.resx">
+      <DependentUpon>DictWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dict\DutyDict.resx">
+      <DependentUpon>DutyDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dict\GendarDict.resx">
+      <DependentUpon>GendarDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dict\TitleDict.resx">
+      <DependentUpon>TitleDict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permission\ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permission\FunctionMain.resx">
+      <DependentUpon>FunctionMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permission\PermissionMain.resx">
+      <DependentUpon>PermissionMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Audit\VerifyMain.resx">
+      <DependentUpon>VerifyMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audit\VerifyNode.resx">
+      <DependentUpon>VerifyNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysInfo\F_SystemInfo.resx">
+      <DependentUpon>F_SystemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

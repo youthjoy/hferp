@@ -1,0 +1,5 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>E:\重庆商混\src\SH_Pro\QX.Framework.AutoForm\Dll\</ReferencePath>
+  </PropertyGroup>
+</Project>

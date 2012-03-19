@@ -1,0 +1,12 @@
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\obj\Debug\ResolveAssemblyReference.cache
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\obj\Debug\QX.MessageHost.Properties.Resources.resources
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\obj\Debug\QX.MessageHost.csproj.GenerateResource.Cache
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\bin\Debug\QX.MessageHost.exe.config
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\bin\Debug\QX.MessageHost.exe
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\bin\Debug\QX.MessageHost.pdb
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\bin\Debug\QX.GSMModem.dll
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\bin\Debug\QX.IMessage.dll
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\bin\Debug\QX.IMessage.pdb
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\bin\Debug\QX.GSMModem.pdb
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\obj\Debug\QX.MessageHost.exe
+E:\Code\Project\TFS_HF\MessageHost\QX.MessageHost\QX.MessageHost\obj\Debug\QX.MessageHost.pdb

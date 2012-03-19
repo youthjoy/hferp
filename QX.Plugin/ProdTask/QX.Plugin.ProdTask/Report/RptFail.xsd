@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RptFail" targetNamespace="http://tempuri.org/RptFail.xsd" xmlns:mstns="http://tempuri.org/RptFail.xsd" xmlns="http://tempuri.org/RptFail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MacDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MacDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QX.Plugin.Prod.Properties.Settings.GlobalReference.Default.MacDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VRpt_FInformationTableAdapter" GeneratorDataComponentClassName="VRpt_FInformationTableAdapter" Name="VRpt_FInformation" UserDataComponentName="VRpt_FInformationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MacDConnectionString (Settings)" DbObjectName="MacD.dbo.VRpt_FInformation" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT   FInfo_ID, FInfo_Code, FInfo_CustomerCode, FInfo_HandCode, FInfo_RespEntity1, FInfo_RespEntity2, FInfo_CmdCode, 
+                FInfo_PartNo, FInfo_PartName, FInfo_PartSpec, FInfo_Num, FInfo_ProdNo, FInfo_FindNode, FInfo_FindNodeName, 
+                FInfo_RespNode, FInfo_RespEntity, FInfo_TechReq, FInfo_InCompetent, FInfo_Owner, FInfo_Date, FInfo_Process, 
+                FInfo_Stat, FInfo_IsCancel, FInfo_CancelPep, FInfo_CancelDate, FInfo_CancelDesp, FInfo_IsClaim, FInfo_ClaimDesp, 
+                FInfo_ClaimPep, FInfo_ClaimDate, FInfo_Reason, Stat, AuditStat, AuditCurAudit, FInfo_Udef1, FInfo_Udef2, FInfo_Creator, 
+                FInfo_CreateTime
+FROM      VRpt_FInformation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FInfo_ID" DataSetColumn="FInfo_ID" />
+              <Mapping SourceColumn="FInfo_Code" DataSetColumn="FInfo_Code" />
+              <Mapping SourceColumn="FInfo_CustomerCode" DataSetColumn="FInfo_CustomerCode" />
+              <Mapping SourceColumn="FInfo_HandCode" DataSetColumn="FInfo_HandCode" />
+              <Mapping SourceColumn="FInfo_RespEntity1" DataSetColumn="FInfo_RespEntity1" />
+              <Mapping SourceColumn="FInfo_RespEntity2" DataSetColumn="FInfo_RespEntity2" />
+              <Mapping SourceColumn="FInfo_CmdCode" DataSetColumn="FInfo_CmdCode" />
+              <Mapping SourceColumn="FInfo_PartNo" DataSetColumn="FInfo_PartNo" />
+              <Mapping SourceColumn="FInfo_PartName" DataSetColumn="FInfo_PartName" />
+              <Mapping SourceColumn="FInfo_PartSpec" DataSetColumn="FInfo_PartSpec" />
+              <Mapping SourceColumn="FInfo_Num" DataSetColumn="FInfo_Num" />
+              <Mapping SourceColumn="FInfo_ProdNo" DataSetColumn="FInfo_ProdNo" />
+              <Mapping SourceColumn="FInfo_FindNode" DataSetColumn="FInfo_FindNode" />
+              <Mapping SourceColumn="FInfo_FindNodeName" DataSetColumn="FInfo_FindNodeName" />
+              <Mapping SourceColumn="FInfo_RespNode" DataSetColumn="FInfo_RespNode" />
+              <Mapping SourceColumn="FInfo_RespEntity" DataSetColumn="FInfo_RespEntity" />
+              <Mapping SourceColumn="FInfo_TechReq" DataSetColumn="FInfo_TechReq" />
+              <Mapping SourceColumn="FInfo_InCompetent" DataSetColumn="FInfo_InCompetent" />
+              <Mapping SourceColumn="FInfo_Owner" DataSetColumn="FInfo_Owner" />
+              <Mapping SourceColumn="FInfo_Date" DataSetColumn="FInfo_Date" />
+              <Mapping SourceColumn="FInfo_Process" DataSetColumn="FInfo_Process" />
+              <Mapping SourceColumn="FInfo_Stat" DataSetColumn="FInfo_Stat" />
+              <Mapping SourceColumn="FInfo_CancelPep" DataSetColumn="FInfo_CancelPep" />
+              <Mapping SourceColumn="FInfo_CancelDate" DataSetColumn="FInfo_CancelDate" />
+              <Mapping SourceColumn="FInfo_CancelDesp" DataSetColumn="FInfo_CancelDesp" />
+              <Mapping SourceColumn="FInfo_ClaimDesp" DataSetColumn="FInfo_ClaimDesp" />
+              <Mapping SourceColumn="FInfo_ClaimPep" DataSetColumn="FInfo_ClaimPep" />
+              <Mapping SourceColumn="FInfo_ClaimDate" DataSetColumn="FInfo_ClaimDate" />
+              <Mapping SourceColumn="FInfo_Reason" DataSetColumn="FInfo_Reason" />
+              <Mapping SourceColumn="Stat" DataSetColumn="Stat" />
+              <Mapping SourceColumn="AuditStat" DataSetColumn="AuditStat" />
+              <Mapping SourceColumn="AuditCurAudit" DataSetColumn="AuditCurAudit" />
+              <Mapping SourceColumn="FInfo_Udef1" DataSetColumn="FInfo_Udef1" />
+              <Mapping SourceColumn="FInfo_Udef2" DataSetColumn="FInfo_Udef2" />
+              <Mapping SourceColumn="FInfo_IsCancel" DataSetColumn="FInfo_IsCancel1" />
+              <Mapping SourceColumn="FInfo_IsClaim" DataSetColumn="FInfo_IsClaim1" />
+              <Mapping SourceColumn="FInfo_Creator" DataSetColumn="FInfo_Creator" />
+              <Mapping SourceColumn="FInfo_CreateTime" DataSetColumn="FInfo_CreateTime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RptFail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RptFail" msprop:Generator_DataSetName="RptFail" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VRpt_FInformation" msprop:Generator_UserTableName="VRpt_FInformation" msprop:Generator_RowDeletedName="VRpt_FInformationRowDeleted" msprop:Generator_RowChangedName="VRpt_FInformationRowChanged" msprop:Generator_RowClassName="VRpt_FInformationRow" msprop:Generator_RowChangingName="VRpt_FInformationRowChanging" msprop:Generator_RowEvArgName="VRpt_FInformationRowChangeEvent" msprop:Generator_RowEvHandlerName="VRpt_FInformationRowChangeEventHandler" msprop:Generator_TableClassName="VRpt_FInformationDataTable" msprop:Generator_TableVarName="tableVRpt_FInformation" msprop:Generator_RowDeletingName="VRpt_FInformationRowDeleting" msprop:Generator_TablePropName="VRpt_FInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FInfo_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="FInfo_ID" msprop:Generator_ColumnVarNameInTable="columnFInfo_ID" msprop:Generator_ColumnPropNameInRow="FInfo_ID" msprop:Generator_ColumnPropNameInTable="FInfo_IDColumn" type="xs:decimal" />
+              <xs:element name="FInfo_Code" msprop:Generator_UserColumnName="FInfo_Code" msprop:Generator_ColumnVarNameInTable="columnFInfo_Code" msprop:Generator_ColumnPropNameInRow="FInfo_Code" msprop:Generator_ColumnPropNameInTable="FInfo_CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_CustomerCode" msprop:Generator_UserColumnName="FInfo_CustomerCode" msprop:Generator_ColumnVarNameInTable="columnFInfo_CustomerCode" msprop:Generator_ColumnPropNameInRow="FInfo_CustomerCode" msprop:Generator_ColumnPropNameInTable="FInfo_CustomerCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_HandCode" msprop:Generator_UserColumnName="FInfo_HandCode" msprop:Generator_ColumnVarNameInTable="columnFInfo_HandCode" msprop:Generator_ColumnPropNameInRow="FInfo_HandCode" msprop:Generator_ColumnPropNameInTable="FInfo_HandCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_RespEntity1" msprop:Generator_UserColumnName="FInfo_RespEntity1" msprop:Generator_ColumnVarNameInTable="columnFInfo_RespEntity1" msprop:Generator_ColumnPropNameInRow="FInfo_RespEntity1" msprop:Generator_ColumnPropNameInTable="FInfo_RespEntity1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_RespEntity2" msprop:Generator_UserColumnName="FInfo_RespEntity2" msprop:Generator_ColumnVarNameInTable="columnFInfo_RespEntity2" msprop:Generator_ColumnPropNameInRow="FInfo_RespEntity2" msprop:Generator_ColumnPropNameInTable="FInfo_RespEntity2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_CmdCode" msprop:Generator_UserColumnName="FInfo_CmdCode" msprop:Generator_ColumnVarNameInTable="columnFInfo_CmdCode" msprop:Generator_ColumnPropNameInRow="FInfo_CmdCode" msprop:Generator_ColumnPropNameInTable="FInfo_CmdCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_PartNo" msprop:Generator_UserColumnName="FInfo_PartNo" msprop:Generator_ColumnVarNameInTable="columnFInfo_PartNo" msprop:Generator_ColumnPropNameInRow="FInfo_PartNo" msprop:Generator_ColumnPropNameInTable="FInfo_PartNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_PartName" msprop:Generator_UserColumnName="FInfo_PartName" msprop:Generator_ColumnVarNameInTable="columnFInfo_PartName" msprop:Generator_ColumnPropNameInRow="FInfo_PartName" msprop:Generator_ColumnPropNameInTable="FInfo_PartNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_PartSpec" msprop:Generator_UserColumnName="FInfo_PartSpec" msprop:Generator_ColumnVarNameInTable="columnFInfo_PartSpec" msprop:Generator_ColumnPropNameInRow="FInfo_PartSpec" msprop:Generator_ColumnPropNameInTable="FInfo_PartSpecColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Num" msprop:Generator_UserColumnName="FInfo_Num" msprop:Generator_ColumnVarNameInTable="columnFInfo_Num" msprop:Generator_ColumnPropNameInRow="FInfo_Num" msprop:Generator_ColumnPropNameInTable="FInfo_NumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FInfo_ProdNo" msprop:Generator_UserColumnName="FInfo_ProdNo" msprop:Generator_ColumnVarNameInTable="columnFInfo_ProdNo" msprop:Generator_ColumnPropNameInRow="FInfo_ProdNo" msprop:Generator_ColumnPropNameInTable="FInfo_ProdNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_FindNode" msprop:Generator_UserColumnName="FInfo_FindNode" msprop:Generator_ColumnVarNameInTable="columnFInfo_FindNode" msprop:Generator_ColumnPropNameInRow="FInfo_FindNode" msprop:Generator_ColumnPropNameInTable="FInfo_FindNodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_FindNodeName" msprop:Generator_UserColumnName="FInfo_FindNodeName" msprop:Generator_ColumnVarNameInTable="columnFInfo_FindNodeName" msprop:Generator_ColumnPropNameInRow="FInfo_FindNodeName" msprop:Generator_ColumnPropNameInTable="FInfo_FindNodeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_RespNode" msprop:Generator_UserColumnName="FInfo_RespNode" msprop:Generator_ColumnVarNameInTable="columnFInfo_RespNode" msprop:Generator_ColumnPropNameInRow="FInfo_RespNode" msprop:Generator_ColumnPropNameInTable="FInfo_RespNodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_RespEntity" msprop:Generator_UserColumnName="FInfo_RespEntity" msprop:Generator_ColumnVarNameInTable="columnFInfo_RespEntity" msprop:Generator_ColumnPropNameInRow="FInfo_RespEntity" msprop:Generator_ColumnPropNameInTable="FInfo_RespEntityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_TechReq" msprop:Generator_UserColumnName="FInfo_TechReq" msprop:Generator_ColumnVarNameInTable="columnFInfo_TechReq" msprop:Generator_ColumnPropNameInRow="FInfo_TechReq" msprop:Generator_ColumnPropNameInTable="FInfo_TechReqColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_InCompetent" msprop:Generator_UserColumnName="FInfo_InCompetent" msprop:Generator_ColumnVarNameInTable="columnFInfo_InCompetent" msprop:Generator_ColumnPropNameInRow="FInfo_InCompetent" msprop:Generator_ColumnPropNameInTable="FInfo_InCompetentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Owner" msprop:Generator_UserColumnName="FInfo_Owner" msprop:Generator_ColumnVarNameInTable="columnFInfo_Owner" msprop:Generator_ColumnPropNameInRow="FInfo_Owner" msprop:Generator_ColumnPropNameInTable="FInfo_OwnerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Date" msprop:Generator_UserColumnName="FInfo_Date" msprop:Generator_ColumnVarNameInTable="columnFInfo_Date" msprop:Generator_ColumnPropNameInRow="FInfo_Date" msprop:Generator_ColumnPropNameInTable="FInfo_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FInfo_Process" msprop:Generator_UserColumnName="FInfo_Process" msprop:Generator_ColumnVarNameInTable="columnFInfo_Process" msprop:Generator_ColumnPropNameInRow="FInfo_Process" msprop:Generator_ColumnPropNameInTable="FInfo_ProcessColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Stat" msprop:Generator_UserColumnName="FInfo_Stat" msprop:Generator_ColumnVarNameInTable="columnFInfo_Stat" msprop:Generator_ColumnPropNameInRow="FInfo_Stat" msprop:Generator_ColumnPropNameInTable="FInfo_StatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_IsCancel" msprop:Generator_UserColumnName="FInfo_IsCancel" msprop:Generator_ColumnVarNameInTable="columnFInfo_IsCancel" msprop:Generator_ColumnPropNameInRow="FInfo_IsCancel" msprop:Generator_ColumnPropNameInTable="FInfo_IsCancelColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FInfo_CancelPep" msprop:Generator_UserColumnName="FInfo_CancelPep" msprop:Generator_ColumnVarNameInTable="columnFInfo_CancelPep" msprop:Generator_ColumnPropNameInRow="FInfo_CancelPep" msprop:Generator_ColumnPropNameInTable="FInfo_CancelPepColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_CancelDate" msprop:Generator_UserColumnName="FInfo_CancelDate" msprop:Generator_ColumnVarNameInTable="columnFInfo_CancelDate" msprop:Generator_ColumnPropNameInRow="FInfo_CancelDate" msprop:Generator_ColumnPropNameInTable="FInfo_CancelDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FInfo_CancelDesp" msprop:Generator_UserColumnName="FInfo_CancelDesp" msprop:Generator_ColumnVarNameInTable="columnFInfo_CancelDesp" msprop:Generator_ColumnPropNameInRow="FInfo_CancelDesp" msprop:Generator_ColumnPropNameInTable="FInfo_CancelDespColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_IsClaim" msprop:Generator_UserColumnName="FInfo_IsClaim" msprop:Generator_ColumnVarNameInTable="columnFInfo_IsClaim" msprop:Generator_ColumnPropNameInRow="FInfo_IsClaim" msprop:Generator_ColumnPropNameInTable="FInfo_IsClaimColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FInfo_ClaimDesp" msprop:Generator_UserColumnName="FInfo_ClaimDesp" msprop:Generator_ColumnVarNameInTable="columnFInfo_ClaimDesp" msprop:Generator_ColumnPropNameInRow="FInfo_ClaimDesp" msprop:Generator_ColumnPropNameInTable="FInfo_ClaimDespColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_ClaimPep" msprop:Generator_UserColumnName="FInfo_ClaimPep" msprop:Generator_ColumnVarNameInTable="columnFInfo_ClaimPep" msprop:Generator_ColumnPropNameInRow="FInfo_ClaimPep" msprop:Generator_ColumnPropNameInTable="FInfo_ClaimPepColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_ClaimDate" msprop:Generator_UserColumnName="FInfo_ClaimDate" msprop:Generator_ColumnVarNameInTable="columnFInfo_ClaimDate" msprop:Generator_ColumnPropNameInRow="FInfo_ClaimDate" msprop:Generator_ColumnPropNameInTable="FInfo_ClaimDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FInfo_Reason" msprop:Generator_UserColumnName="FInfo_Reason" msprop:Generator_ColumnVarNameInTable="columnFInfo_Reason" msprop:Generator_ColumnPropNameInRow="FInfo_Reason" msprop:Generator_ColumnPropNameInTable="FInfo_ReasonColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stat" msprop:Generator_UserColumnName="Stat" msprop:Generator_ColumnVarNameInTable="columnStat" msprop:Generator_ColumnPropNameInRow="Stat" msprop:Generator_ColumnPropNameInTable="StatColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditStat" msprop:Generator_UserColumnName="AuditStat" msprop:Generator_ColumnVarNameInTable="columnAuditStat" msprop:Generator_ColumnPropNameInRow="AuditStat" msprop:Generator_ColumnPropNameInTable="AuditStatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AuditCurAudit" msprop:Generator_UserColumnName="AuditCurAudit" msprop:Generator_ColumnVarNameInTable="columnAuditCurAudit" msprop:Generator_ColumnPropNameInRow="AuditCurAudit" msprop:Generator_ColumnPropNameInTable="AuditCurAuditColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Udef1" msprop:Generator_UserColumnName="FInfo_Udef1" msprop:Generator_ColumnVarNameInTable="columnFInfo_Udef1" msprop:Generator_ColumnPropNameInRow="FInfo_Udef1" msprop:Generator_ColumnPropNameInTable="FInfo_Udef1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Udef2" msprop:Generator_UserColumnName="FInfo_Udef2" msprop:Generator_ColumnVarNameInTable="columnFInfo_Udef2" msprop:Generator_ColumnPropNameInRow="FInfo_Udef2" msprop:Generator_ColumnPropNameInTable="FInfo_Udef2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_IsCancel1" msdata:Caption="FInfo_IsCancel" msprop:Generator_UserColumnName="FInfo_IsCancel1" msprop:Generator_ColumnPropNameInRow="FInfo_IsCancel1" msprop:Generator_ColumnVarNameInTable="columnFInfo_IsCancel1" msprop:Generator_ColumnPropNameInTable="FInfo_IsCancel1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_IsClaim1" msdata:Caption="FInfo_IsClaim" msprop:Generator_UserColumnName="FInfo_IsClaim1" msprop:Generator_ColumnPropNameInRow="FInfo_IsClaim1" msprop:Generator_ColumnVarNameInTable="columnFInfo_IsClaim1" msprop:Generator_ColumnPropNameInTable="FInfo_IsClaim1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Creator" msprop:Generator_UserColumnName="FInfo_Creator" msprop:Generator_ColumnPropNameInRow="FInfo_Creator" msprop:Generator_ColumnVarNameInTable="columnFInfo_Creator" msprop:Generator_ColumnPropNameInTable="FInfo_CreatorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_CreateTime" msprop:Generator_UserColumnName="FInfo_CreateTime" msprop:Generator_ColumnPropNameInRow="FInfo_CreateTime" msprop:Generator_ColumnVarNameInTable="columnFInfo_CreateTime" msprop:Generator_ColumnPropNameInTable="FInfo_CreateTimeColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VRpt_FInformation" />
+      <xs:field xpath="mstns:FInfo_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,8 @@
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.FHelper.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.FHelper.pdb
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\QX.Plugin.FHelper\obj\Debug\ResolveAssemblyReference.cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\QX.Plugin.FHelper\obj\Debug\QX.Plugin.FHelper.FHelperPriceMain.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\QX.Plugin.FHelper\obj\Debug\QX.Plugin.FHelper.csproj.GenerateResource.Cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\QX.Plugin.FHelper\obj\Debug\QX.Plugin.FHelper.dll.licenses
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\QX.Plugin.FHelper\obj\Debug\QX.Plugin.FHelper.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\QX.Plugin.FHelper\obj\Debug\QX.Plugin.FHelper.pdb

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B3FCD01-CA22-4273-A03C-B660D91B5D75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QX.Plugin.RoadCateManage</RootNamespace>
+    <AssemblyName>QX.Plugin.RoadCateManage</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\QX.UI\bin\Debug\AddIns\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics2.Shared.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v9.1, Version=9.1.20091.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditedRoadNodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuditedRoadNodes.Designer.cs">
+      <DependentUpon>AuditedRoadNodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopyRoadComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyRoadComponent.Designer.cs">
+      <DependentUpon>CopyRoadComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RoadCate.cs" />
+    <Compile Include="RoadCateManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoadCateManage.Designer.cs">
+      <DependentUpon>RoadCateManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoadComponents.cs" />
+    <Compile Include="RoadComptInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoadComptInfo.Designer.cs">
+      <DependentUpon>RoadComptInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoadComptMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoadComptMaintain.Designer.cs">
+      <DependentUpon>RoadComptMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoadNode.cs" />
+    <Compile Include="RoadNodesManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoadNodesManage.Designer.cs">
+      <DependentUpon>RoadNodesManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoadNodesTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoadNodesTemplate.Designer.cs">
+      <DependentUpon>RoadNodesTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoadTest.cs" />
+    <Compile Include="RoadTestManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoadTestManage.Designer.cs">
+      <DependentUpon>RoadTestManage.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\QX.BLL\QX.BLL.csproj">
+      <Project>{8479AAA5-4F2B-49E0-8B70-A93D14184ADA}</Project>
+      <Name>QX.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.BseDict\QX.BseDict.csproj">
+      <Project>{D30AFD1E-0082-4BC8-854A-884BF522B6CF}</Project>
+      <Name>QX.BseDict</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.Common\QX.Common.csproj">
+      <Project>{FB3F7914-E3E4-4007-9EB1-9E4645F150A5}</Project>
+      <Name>QX.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.DataModel\QX.DataModel.csproj">
+      <Project>{AD41FE41-242F-4AF7-9FC9-A41C70B004AC}</Project>
+      <Name>QX.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.IPlugin\QX.PluginFramework.csproj">
+      <Project>{ECE6349B-67ED-446D-ADD3-30ECE84EBB93}</Project>
+      <Name>QX.PluginFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\QX.UI\QX.UI.csproj">
+      <Project>{26188CDF-3774-4792-B79F-133CF638A962}</Project>
+      <Name>QX.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AuditedRoadNodes.resx">
+      <DependentUpon>AuditedRoadNodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopyRoadComponent.resx">
+      <DependentUpon>CopyRoadComponent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadCateManage.resx">
+      <DependentUpon>RoadCateManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadComptInfo.resx">
+      <DependentUpon>RoadComptInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadComptMaintain.resx">
+      <DependentUpon>RoadComptMaintain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadNodesManage.resx">
+      <DependentUpon>RoadNodesManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadNodesTemplate.resx">
+      <DependentUpon>RoadNodesTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoadTestManage.resx">
+      <DependentUpon>RoadTestManage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon\compedit.png" />
+    <Content Include="Icon\copy.png" />
+    <Content Include="Icon\import.png" />
+    <Content Include="Icon\parts.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

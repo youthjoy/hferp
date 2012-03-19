@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MacDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MacDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QX.Plugin.Prod.Properties.Settings.GlobalReference.Default.MacDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Failure_InformationTableAdapter" GeneratorDataComponentClassName="Failure_InformationTableAdapter" Name="Failure_Information" UserDataComponentName="Failure_InformationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MacDConnectionString (Settings)" DbObjectName="MacD.dbo.Failure_Information" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Failure_Information] WHERE (([FInfo_ID] = @Original_FInfo_ID) AND ((@IsNull_FInfo_Code = 1 AND [FInfo_Code] IS NULL) OR ([FInfo_Code] = @Original_FInfo_Code)) AND ((@IsNull_FInfo_CustomerCode = 1 AND [FInfo_CustomerCode] IS NULL) OR ([FInfo_CustomerCode] = @Original_FInfo_CustomerCode)) AND ((@IsNull_FInfo_HandCode = 1 AND [FInfo_HandCode] IS NULL) OR ([FInfo_HandCode] = @Original_FInfo_HandCode)) AND ((@IsNull_FInfo_RespEntity1 = 1 AND [FInfo_RespEntity1] IS NULL) OR ([FInfo_RespEntity1] = @Original_FInfo_RespEntity1)) AND ((@IsNull_FInfo_RespEntity2 = 1 AND [FInfo_RespEntity2] IS NULL) OR ([FInfo_RespEntity2] = @Original_FInfo_RespEntity2)) AND ((@IsNull_FInfo_CmdCode = 1 AND [FInfo_CmdCode] IS NULL) OR ([FInfo_CmdCode] = @Original_FInfo_CmdCode)) AND ((@IsNull_FInfo_PartNo = 1 AND [FInfo_PartNo] IS NULL) OR ([FInfo_PartNo] = @Original_FInfo_PartNo)) AND ((@IsNull_FInfo_PartName = 1 AND [FInfo_PartName] IS NULL) OR ([FInfo_PartName] = @Original_FInfo_PartName)) AND ((@IsNull_FInfo_PartSpec = 1 AND [FInfo_PartSpec] IS NULL) OR ([FInfo_PartSpec] = @Original_FInfo_PartSpec)) AND ((@IsNull_FInfo_Num = 1 AND [FInfo_Num] IS NULL) OR ([FInfo_Num] = @Original_FInfo_Num)) AND ((@IsNull_FInfo_ProdNo = 1 AND [FInfo_ProdNo] IS NULL) OR ([FInfo_ProdNo] = @Original_FInfo_ProdNo)) AND ((@IsNull_FInfo_FindNode = 1 AND [FInfo_FindNode] IS NULL) OR ([FInfo_FindNode] = @Original_FInfo_FindNode)) AND ((@IsNull_FInfo_FindNodeName = 1 AND [FInfo_FindNodeName] IS NULL) OR ([FInfo_FindNodeName] = @Original_FInfo_FindNodeName)) AND ((@IsNull_FInfo_RespNode = 1 AND [FInfo_RespNode] IS NULL) OR ([FInfo_RespNode] = @Original_FInfo_RespNode)) AND ((@IsNull_FInfo_RespEntity = 1 AND [FInfo_RespEntity] IS NULL) OR ([FInfo_RespEntity] = @Original_FInfo_RespEntity)) AND ((@IsNull_FInfo_TechReq = 1 AND [FInfo_TechReq] IS NULL) OR ([FInfo_TechReq] = @Original_FInfo_TechReq)) AND ((@IsNull_FInfo_InCompetent = 1 AND [FInfo_InCompetent] IS NULL) OR ([FInfo_InCompetent] = @Original_FInfo_InCompetent)) AND ((@IsNull_FInfo_Owner = 1 AND [FInfo_Owner] IS NULL) OR ([FInfo_Owner] = @Original_FInfo_Owner)) AND ((@IsNull_FInfo_Date = 1 AND [FInfo_Date] IS NULL) OR ([FInfo_Date] = @Original_FInfo_Date)) AND ((@IsNull_FInfo_Process = 1 AND [FInfo_Process] IS NULL) OR ([FInfo_Process] = @Original_FInfo_Process)) AND ((@IsNull_FInfo_Stat = 1 AND [FInfo_Stat] IS NULL) OR ([FInfo_Stat] = @Original_FInfo_Stat)) AND ((@IsNull_FInfo_IsCancel = 1 AND [FInfo_IsCancel] IS NULL) OR ([FInfo_IsCancel] = @Original_FInfo_IsCancel)) AND ((@IsNull_FInfo_CancelPep = 1 AND [FInfo_CancelPep] IS NULL) OR ([FInfo_CancelPep] = @Original_FInfo_CancelPep)) AND ((@IsNull_FInfo_CancelDate = 1 AND [FInfo_CancelDate] IS NULL) OR ([FInfo_CancelDate] = @Original_FInfo_CancelDate)) AND ((@IsNull_FInfo_CancelDesp = 1 AND [FInfo_CancelDesp] IS NULL) OR ([FInfo_CancelDesp] = @Original_FInfo_CancelDesp)) AND ((@IsNull_FInfo_IsClaim = 1 AND [FInfo_IsClaim] IS NULL) OR ([FInfo_IsClaim] = @Original_FInfo_IsClaim)) AND ((@IsNull_FInfo_ClaimDesp = 1 AND [FInfo_ClaimDesp] IS NULL) OR ([FInfo_ClaimDesp] = @Original_FInfo_ClaimDesp)) AND ((@IsNull_FInfo_ClaimPep = 1 AND [FInfo_ClaimPep] IS NULL) OR ([FInfo_ClaimPep] = @Original_FInfo_ClaimPep)) AND ((@IsNull_FInfo_ClaimDate = 1 AND [FInfo_ClaimDate] IS NULL) OR ([FInfo_ClaimDate] = @Original_FInfo_ClaimDate)) AND ((@IsNull_Stat = 1 AND [Stat] IS NULL) OR ([Stat] = @Original_Stat)) AND ((@IsNull_AuditStat = 1 AND [AuditStat] IS NULL) OR ([AuditStat] = @Original_AuditStat)) AND ((@IsNull_AuditCurAudit = 1 AND [AuditCurAudit] IS NULL) OR ([AuditCurAudit] = @Original_AuditCurAudit)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_FInfo_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="FInfo_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Code" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Code" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CustomerCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CustomerCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_CustomerCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CustomerCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_HandCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_HandCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_HandCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_HandCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_RespEntity1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_RespEntity1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_RespEntity1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_RespEntity2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_RespEntity2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_RespEntity2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CmdCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CmdCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_CmdCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CmdCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_PartNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_PartNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_PartNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_PartName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_PartName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_PartName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_PartSpec" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_PartSpec" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_PartSpec" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartSpec" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Num" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Num" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_FInfo_Num" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Num" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_ProdNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_ProdNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_ProdNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ProdNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_FindNode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_FindNode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_FindNode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_FindNode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_FindNodeName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_FindNodeName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_FindNodeName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_FindNodeName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_RespNode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_RespNode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_RespNode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespNode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_RespEntity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_RespEntity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_RespEntity" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_TechReq" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_TechReq" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_TechReq" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_TechReq" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_InCompetent" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_InCompetent" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_InCompetent" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_InCompetent" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Owner" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Owner" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_Owner" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Owner" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FInfo_Date" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Process" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Process" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_Process" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Process" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Stat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Stat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_Stat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Stat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_IsCancel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsCancel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_FInfo_IsCancel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsCancel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CancelPep" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CancelPep" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_CancelPep" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CancelPep" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CancelDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CancelDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FInfo_CancelDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_CancelDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CancelDesp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CancelDesp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_CancelDesp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CancelDesp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_IsClaim" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsClaim" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_FInfo_IsClaim" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsClaim" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_ClaimDesp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_ClaimDesp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_ClaimDesp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ClaimDesp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_ClaimPep" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_ClaimPep" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_ClaimPep" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ClaimPep" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_ClaimDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_ClaimDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FInfo_ClaimDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_ClaimDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Stat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Stat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AuditStat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AuditStat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_AuditStat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AuditStat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AuditCurAudit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AuditCurAudit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_AuditCurAudit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AuditCurAudit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Failure_Information] ([FInfo_Code], [FInfo_CustomerCode], [FInfo_HandCode], [FInfo_RespEntity1], [FInfo_RespEntity2], [FInfo_CmdCode], [FInfo_PartNo], [FInfo_PartName], [FInfo_PartSpec], [FInfo_Num], [FInfo_ProdNo], [FInfo_FindNode], [FInfo_FindNodeName], [FInfo_RespNode], [FInfo_RespEntity], [FInfo_TechReq], [FInfo_InCompetent], [FInfo_Owner], [FInfo_Date], [FInfo_Process], [FInfo_Stat], [FInfo_IsCancel], [FInfo_CancelPep], [FInfo_CancelDate], [FInfo_CancelDesp], [FInfo_IsClaim], [FInfo_ClaimDesp], [FInfo_ClaimPep], [FInfo_ClaimDate], [Stat], [AuditStat], [AuditCurAudit]) VALUES (@FInfo_Code, @FInfo_CustomerCode, @FInfo_HandCode, @FInfo_RespEntity1, @FInfo_RespEntity2, @FInfo_CmdCode, @FInfo_PartNo, @FInfo_PartName, @FInfo_PartSpec, @FInfo_Num, @FInfo_ProdNo, @FInfo_FindNode, @FInfo_FindNodeName, @FInfo_RespNode, @FInfo_RespEntity, @FInfo_TechReq, @FInfo_InCompetent, @FInfo_Owner, @FInfo_Date, @FInfo_Process, @FInfo_Stat, @FInfo_IsCancel, @FInfo_CancelPep, @FInfo_CancelDate, @FInfo_CancelDesp, @FInfo_IsClaim, @FInfo_ClaimDesp, @FInfo_ClaimPep, @FInfo_ClaimDate, @Stat, @AuditStat, @AuditCurAudit);
+SELECT FInfo_ID, FInfo_Code, FInfo_CustomerCode, FInfo_HandCode, FInfo_RespEntity1, FInfo_RespEntity2, FInfo_CmdCode, FInfo_PartNo, FInfo_PartName, FInfo_PartSpec, FInfo_Num, FInfo_ProdNo, FInfo_FindNode, FInfo_FindNodeName, FInfo_RespNode, FInfo_RespEntity, FInfo_TechReq, FInfo_InCompetent, FInfo_Owner, FInfo_Date, FInfo_Process, FInfo_Stat, FInfo_IsCancel, FInfo_CancelPep, FInfo_CancelDate, FInfo_CancelDesp, FInfo_IsClaim, FInfo_ClaimDesp, FInfo_ClaimPep, FInfo_ClaimDate, Stat, AuditStat, AuditCurAudit FROM Failure_Information WHERE (FInfo_ID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_CustomerCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CustomerCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_HandCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_HandCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_RespEntity1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_RespEntity2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_CmdCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CmdCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_PartNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_PartName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_PartSpec" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartSpec" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@FInfo_Num" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Num" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_ProdNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ProdNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_FindNode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_FindNode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_FindNodeName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_FindNodeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_RespNode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespNode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_RespEntity" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_TechReq" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_TechReq" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_InCompetent" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_InCompetent" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_Owner" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Owner" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FInfo_Date" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_Process" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Process" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_Stat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Stat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@FInfo_IsCancel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsCancel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_CancelPep" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CancelPep" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FInfo_CancelDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_CancelDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_CancelDesp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CancelDesp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@FInfo_IsClaim" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsClaim" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_ClaimDesp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ClaimDesp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_ClaimPep" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ClaimPep" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FInfo_ClaimDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_ClaimDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Stat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AuditStat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AuditStat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AuditCurAudit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AuditCurAudit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT FInfo_ID, FInfo_Code, FInfo_CustomerCode, FInfo_HandCode, FInfo_RespEntity1, FInfo_RespEntity2, FInfo_CmdCode, FInfo_PartNo, FInfo_PartName, FInfo_PartSpec, FInfo_Num, FInfo_ProdNo, FInfo_FindNode, FInfo_FindNodeName, FInfo_RespNode, FInfo_RespEntity, FInfo_TechReq, FInfo_InCompetent, FInfo_Owner, FInfo_Date, FInfo_Process, FInfo_Stat, FInfo_IsCancel, FInfo_CancelPep, FInfo_CancelDate, FInfo_CancelDesp, FInfo_IsClaim, FInfo_ClaimDesp, FInfo_ClaimPep, FInfo_ClaimDate, Stat, AuditStat, AuditCurAudit FROM dbo.Failure_Information</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Failure_Information] SET [FInfo_Code] = @FInfo_Code, [FInfo_CustomerCode] = @FInfo_CustomerCode, [FInfo_HandCode] = @FInfo_HandCode, [FInfo_RespEntity1] = @FInfo_RespEntity1, [FInfo_RespEntity2] = @FInfo_RespEntity2, [FInfo_CmdCode] = @FInfo_CmdCode, [FInfo_PartNo] = @FInfo_PartNo, [FInfo_PartName] = @FInfo_PartName, [FInfo_PartSpec] = @FInfo_PartSpec, [FInfo_Num] = @FInfo_Num, [FInfo_ProdNo] = @FInfo_ProdNo, [FInfo_FindNode] = @FInfo_FindNode, [FInfo_FindNodeName] = @FInfo_FindNodeName, [FInfo_RespNode] = @FInfo_RespNode, [FInfo_RespEntity] = @FInfo_RespEntity, [FInfo_TechReq] = @FInfo_TechReq, [FInfo_InCompetent] = @FInfo_InCompetent, [FInfo_Owner] = @FInfo_Owner, [FInfo_Date] = @FInfo_Date, [FInfo_Process] = @FInfo_Process, [FInfo_Stat] = @FInfo_Stat, [FInfo_IsCancel] = @FInfo_IsCancel, [FInfo_CancelPep] = @FInfo_CancelPep, [FInfo_CancelDate] = @FInfo_CancelDate, [FInfo_CancelDesp] = @FInfo_CancelDesp, [FInfo_IsClaim] = @FInfo_IsClaim, [FInfo_ClaimDesp] = @FInfo_ClaimDesp, [FInfo_ClaimPep] = @FInfo_ClaimPep, [FInfo_ClaimDate] = @FInfo_ClaimDate, [Stat] = @Stat, [AuditStat] = @AuditStat, [AuditCurAudit] = @AuditCurAudit WHERE (([FInfo_ID] = @Original_FInfo_ID) AND ((@IsNull_FInfo_Code = 1 AND [FInfo_Code] IS NULL) OR ([FInfo_Code] = @Original_FInfo_Code)) AND ((@IsNull_FInfo_CustomerCode = 1 AND [FInfo_CustomerCode] IS NULL) OR ([FInfo_CustomerCode] = @Original_FInfo_CustomerCode)) AND ((@IsNull_FInfo_HandCode = 1 AND [FInfo_HandCode] IS NULL) OR ([FInfo_HandCode] = @Original_FInfo_HandCode)) AND ((@IsNull_FInfo_RespEntity1 = 1 AND [FInfo_RespEntity1] IS NULL) OR ([FInfo_RespEntity1] = @Original_FInfo_RespEntity1)) AND ((@IsNull_FInfo_RespEntity2 = 1 AND [FInfo_RespEntity2] IS NULL) OR ([FInfo_RespEntity2] = @Original_FInfo_RespEntity2)) AND ((@IsNull_FInfo_CmdCode = 1 AND [FInfo_CmdCode] IS NULL) OR ([FInfo_CmdCode] = @Original_FInfo_CmdCode)) AND ((@IsNull_FInfo_PartNo = 1 AND [FInfo_PartNo] IS NULL) OR ([FInfo_PartNo] = @Original_FInfo_PartNo)) AND ((@IsNull_FInfo_PartName = 1 AND [FInfo_PartName] IS NULL) OR ([FInfo_PartName] = @Original_FInfo_PartName)) AND ((@IsNull_FInfo_PartSpec = 1 AND [FInfo_PartSpec] IS NULL) OR ([FInfo_PartSpec] = @Original_FInfo_PartSpec)) AND ((@IsNull_FInfo_Num = 1 AND [FInfo_Num] IS NULL) OR ([FInfo_Num] = @Original_FInfo_Num)) AND ((@IsNull_FInfo_ProdNo = 1 AND [FInfo_ProdNo] IS NULL) OR ([FInfo_ProdNo] = @Original_FInfo_ProdNo)) AND ((@IsNull_FInfo_FindNode = 1 AND [FInfo_FindNode] IS NULL) OR ([FInfo_FindNode] = @Original_FInfo_FindNode)) AND ((@IsNull_FInfo_FindNodeName = 1 AND [FInfo_FindNodeName] IS NULL) OR ([FInfo_FindNodeName] = @Original_FInfo_FindNodeName)) AND ((@IsNull_FInfo_RespNode = 1 AND [FInfo_RespNode] IS NULL) OR ([FInfo_RespNode] = @Original_FInfo_RespNode)) AND ((@IsNull_FInfo_RespEntity = 1 AND [FInfo_RespEntity] IS NULL) OR ([FInfo_RespEntity] = @Original_FInfo_RespEntity)) AND ((@IsNull_FInfo_TechReq = 1 AND [FInfo_TechReq] IS NULL) OR ([FInfo_TechReq] = @Original_FInfo_TechReq)) AND ((@IsNull_FInfo_InCompetent = 1 AND [FInfo_InCompetent] IS NULL) OR ([FInfo_InCompetent] = @Original_FInfo_InCompetent)) AND ((@IsNull_FInfo_Owner = 1 AND [FInfo_Owner] IS NULL) OR ([FInfo_Owner] = @Original_FInfo_Owner)) AND ((@IsNull_FInfo_Date = 1 AND [FInfo_Date] IS NULL) OR ([FInfo_Date] = @Original_FInfo_Date)) AND ((@IsNull_FInfo_Process = 1 AND [FInfo_Process] IS NULL) OR ([FInfo_Process] = @Original_FInfo_Process)) AND ((@IsNull_FInfo_Stat = 1 AND [FInfo_Stat] IS NULL) OR ([FInfo_Stat] = @Original_FInfo_Stat)) AND ((@IsNull_FInfo_IsCancel = 1 AND [FInfo_IsCancel] IS NULL) OR ([FInfo_IsCancel] = @Original_FInfo_IsCancel)) AND ((@IsNull_FInfo_CancelPep = 1 AND [FInfo_CancelPep] IS NULL) OR ([FInfo_CancelPep] = @Original_FInfo_CancelPep)) AND ((@IsNull_FInfo_CancelDate = 1 AND [FInfo_CancelDate] IS NULL) OR ([FInfo_CancelDate] = @Original_FInfo_CancelDate)) AND ((@IsNull_FInfo_CancelDesp = 1 AND [FInfo_CancelDesp] IS NULL) OR ([FInfo_CancelDesp] = @Original_FInfo_CancelDesp)) AND ((@IsNull_FInfo_IsClaim = 1 AND [FInfo_IsClaim] IS NULL) OR ([FInfo_IsClaim] = @Original_FInfo_IsClaim)) AND ((@IsNull_FInfo_ClaimDesp = 1 AND [FInfo_ClaimDesp] IS NULL) OR ([FInfo_ClaimDesp] = @Original_FInfo_ClaimDesp)) AND ((@IsNull_FInfo_ClaimPep = 1 AND [FInfo_ClaimPep] IS NULL) OR ([FInfo_ClaimPep] = @Original_FInfo_ClaimPep)) AND ((@IsNull_FInfo_ClaimDate = 1 AND [FInfo_ClaimDate] IS NULL) OR ([FInfo_ClaimDate] = @Original_FInfo_ClaimDate)) AND ((@IsNull_Stat = 1 AND [Stat] IS NULL) OR ([Stat] = @Original_Stat)) AND ((@IsNull_AuditStat = 1 AND [AuditStat] IS NULL) OR ([AuditStat] = @Original_AuditStat)) AND ((@IsNull_AuditCurAudit = 1 AND [AuditCurAudit] IS NULL) OR ([AuditCurAudit] = @Original_AuditCurAudit)));
+SELECT FInfo_ID, FInfo_Code, FInfo_CustomerCode, FInfo_HandCode, FInfo_RespEntity1, FInfo_RespEntity2, FInfo_CmdCode, FInfo_PartNo, FInfo_PartName, FInfo_PartSpec, FInfo_Num, FInfo_ProdNo, FInfo_FindNode, FInfo_FindNodeName, FInfo_RespNode, FInfo_RespEntity, FInfo_TechReq, FInfo_InCompetent, FInfo_Owner, FInfo_Date, FInfo_Process, FInfo_Stat, FInfo_IsCancel, FInfo_CancelPep, FInfo_CancelDate, FInfo_CancelDesp, FInfo_IsClaim, FInfo_ClaimDesp, FInfo_ClaimPep, FInfo_ClaimDate, Stat, AuditStat, AuditCurAudit FROM Failure_Information WHERE (FInfo_ID = @FInfo_ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Code" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_CustomerCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CustomerCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_HandCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_HandCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_RespEntity1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_RespEntity2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_CmdCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CmdCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_PartNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_PartName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_PartSpec" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartSpec" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@FInfo_Num" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Num" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_ProdNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ProdNo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_FindNode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_FindNode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_FindNodeName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_FindNodeName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_RespNode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespNode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_RespEntity" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_TechReq" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_TechReq" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_InCompetent" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_InCompetent" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_Owner" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Owner" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FInfo_Date" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_Date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_Process" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Process" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_Stat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Stat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@FInfo_IsCancel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsCancel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_CancelPep" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CancelPep" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FInfo_CancelDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_CancelDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_CancelDesp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CancelDesp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@FInfo_IsClaim" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsClaim" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_ClaimDesp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ClaimDesp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@FInfo_ClaimPep" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ClaimPep" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FInfo_ClaimDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_ClaimDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Stat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AuditStat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AuditStat" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AuditCurAudit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AuditCurAudit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@Original_FInfo_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="FInfo_ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Code" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Code" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_Code" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Code" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CustomerCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CustomerCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_CustomerCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CustomerCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_HandCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_HandCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_HandCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_HandCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_RespEntity1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_RespEntity1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_RespEntity1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_RespEntity2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_RespEntity2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_RespEntity2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CmdCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CmdCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_CmdCode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CmdCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_PartNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_PartNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_PartNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_PartName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_PartName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_PartName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_PartSpec" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_PartSpec" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_PartSpec" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_PartSpec" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Num" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Num" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_FInfo_Num" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Num" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_ProdNo" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_ProdNo" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_ProdNo" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ProdNo" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_FindNode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_FindNode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_FindNode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_FindNode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_FindNodeName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_FindNodeName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_FindNodeName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_FindNodeName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_RespNode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_RespNode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_RespNode" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespNode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_RespEntity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_RespEntity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_RespEntity" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_RespEntity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_TechReq" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_TechReq" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_TechReq" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_TechReq" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_InCompetent" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_InCompetent" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_InCompetent" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_InCompetent" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Owner" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Owner" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_Owner" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Owner" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FInfo_Date" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_Date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Process" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Process" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_Process" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Process" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_Stat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_Stat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_Stat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_Stat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_IsCancel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsCancel" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_FInfo_IsCancel" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsCancel" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CancelPep" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CancelPep" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_CancelPep" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CancelPep" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CancelDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CancelDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FInfo_CancelDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_CancelDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_CancelDesp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_CancelDesp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_CancelDesp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_CancelDesp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_IsClaim" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsClaim" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_FInfo_IsClaim" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_IsClaim" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_ClaimDesp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_ClaimDesp" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_ClaimDesp" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ClaimDesp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_ClaimPep" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_ClaimPep" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_FInfo_ClaimPep" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="FInfo_ClaimPep" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_FInfo_ClaimDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="FInfo_ClaimDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FInfo_ClaimDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FInfo_ClaimDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Stat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Stat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Stat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AuditStat" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AuditStat" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_AuditStat" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AuditStat" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_AuditCurAudit" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="AuditCurAudit" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_AuditCurAudit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AuditCurAudit" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="FInfo_ID" ColumnName="FInfo_ID" DataSourceName="" DataTypeServer="numeric" DbType="Decimal" Direction="Input" ParameterName="@FInfo_ID" Precision="18" ProviderType="Decimal" Scale="0" Size="9" SourceColumn="FInfo_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="FInfo_ID" DataSetColumn="FInfo_ID" />
+              <Mapping SourceColumn="FInfo_Code" DataSetColumn="FInfo_Code" />
+              <Mapping SourceColumn="FInfo_CustomerCode" DataSetColumn="FInfo_CustomerCode" />
+              <Mapping SourceColumn="FInfo_HandCode" DataSetColumn="FInfo_HandCode" />
+              <Mapping SourceColumn="FInfo_RespEntity1" DataSetColumn="FInfo_RespEntity1" />
+              <Mapping SourceColumn="FInfo_RespEntity2" DataSetColumn="FInfo_RespEntity2" />
+              <Mapping SourceColumn="FInfo_CmdCode" DataSetColumn="FInfo_CmdCode" />
+              <Mapping SourceColumn="FInfo_PartNo" DataSetColumn="FInfo_PartNo" />
+              <Mapping SourceColumn="FInfo_PartName" DataSetColumn="FInfo_PartName" />
+              <Mapping SourceColumn="FInfo_PartSpec" DataSetColumn="FInfo_PartSpec" />
+              <Mapping SourceColumn="FInfo_Num" DataSetColumn="FInfo_Num" />
+              <Mapping SourceColumn="FInfo_ProdNo" DataSetColumn="FInfo_ProdNo" />
+              <Mapping SourceColumn="FInfo_FindNode" DataSetColumn="FInfo_FindNode" />
+              <Mapping SourceColumn="FInfo_FindNodeName" DataSetColumn="FInfo_FindNodeName" />
+              <Mapping SourceColumn="FInfo_RespNode" DataSetColumn="FInfo_RespNode" />
+              <Mapping SourceColumn="FInfo_RespEntity" DataSetColumn="FInfo_RespEntity" />
+              <Mapping SourceColumn="FInfo_TechReq" DataSetColumn="FInfo_TechReq" />
+              <Mapping SourceColumn="FInfo_InCompetent" DataSetColumn="FInfo_InCompetent" />
+              <Mapping SourceColumn="FInfo_Owner" DataSetColumn="FInfo_Owner" />
+              <Mapping SourceColumn="FInfo_Date" DataSetColumn="FInfo_Date" />
+              <Mapping SourceColumn="FInfo_Process" DataSetColumn="FInfo_Process" />
+              <Mapping SourceColumn="FInfo_Stat" DataSetColumn="FInfo_Stat" />
+              <Mapping SourceColumn="FInfo_IsCancel" DataSetColumn="FInfo_IsCancel" />
+              <Mapping SourceColumn="FInfo_CancelPep" DataSetColumn="FInfo_CancelPep" />
+              <Mapping SourceColumn="FInfo_CancelDate" DataSetColumn="FInfo_CancelDate" />
+              <Mapping SourceColumn="FInfo_CancelDesp" DataSetColumn="FInfo_CancelDesp" />
+              <Mapping SourceColumn="FInfo_IsClaim" DataSetColumn="FInfo_IsClaim" />
+              <Mapping SourceColumn="FInfo_ClaimDesp" DataSetColumn="FInfo_ClaimDesp" />
+              <Mapping SourceColumn="FInfo_ClaimPep" DataSetColumn="FInfo_ClaimPep" />
+              <Mapping SourceColumn="FInfo_ClaimDate" DataSetColumn="FInfo_ClaimDate" />
+              <Mapping SourceColumn="Stat" DataSetColumn="Stat" />
+              <Mapping SourceColumn="AuditStat" DataSetColumn="AuditStat" />
+              <Mapping SourceColumn="AuditCurAudit" DataSetColumn="AuditCurAudit" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Failure_Information" msprop:Generator_UserTableName="Failure_Information" msprop:Generator_RowDeletedName="Failure_InformationRowDeleted" msprop:Generator_TableClassName="Failure_InformationDataTable" msprop:Generator_RowChangedName="Failure_InformationRowChanged" msprop:Generator_RowClassName="Failure_InformationRow" msprop:Generator_RowChangingName="Failure_InformationRowChanging" msprop:Generator_RowEvArgName="Failure_InformationRowChangeEvent" msprop:Generator_RowEvHandlerName="Failure_InformationRowChangeEventHandler" msprop:Generator_TablePropName="Failure_Information" msprop:Generator_TableVarName="tableFailure_Information" msprop:Generator_RowDeletingName="Failure_InformationRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FInfo_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="FInfo_ID" msprop:Generator_ColumnPropNameInRow="FInfo_ID" msprop:Generator_ColumnVarNameInTable="columnFInfo_ID" msprop:Generator_ColumnPropNameInTable="FInfo_IDColumn" type="xs:decimal" />
+              <xs:element name="FInfo_Code" msprop:Generator_UserColumnName="FInfo_Code" msprop:Generator_ColumnPropNameInRow="FInfo_Code" msprop:Generator_ColumnVarNameInTable="columnFInfo_Code" msprop:Generator_ColumnPropNameInTable="FInfo_CodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_CustomerCode" msprop:Generator_UserColumnName="FInfo_CustomerCode" msprop:Generator_ColumnPropNameInRow="FInfo_CustomerCode" msprop:Generator_ColumnVarNameInTable="columnFInfo_CustomerCode" msprop:Generator_ColumnPropNameInTable="FInfo_CustomerCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_HandCode" msprop:Generator_UserColumnName="FInfo_HandCode" msprop:Generator_ColumnPropNameInRow="FInfo_HandCode" msprop:Generator_ColumnVarNameInTable="columnFInfo_HandCode" msprop:Generator_ColumnPropNameInTable="FInfo_HandCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_RespEntity1" msprop:Generator_UserColumnName="FInfo_RespEntity1" msprop:Generator_ColumnPropNameInRow="FInfo_RespEntity1" msprop:Generator_ColumnVarNameInTable="columnFInfo_RespEntity1" msprop:Generator_ColumnPropNameInTable="FInfo_RespEntity1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_RespEntity2" msprop:Generator_UserColumnName="FInfo_RespEntity2" msprop:Generator_ColumnPropNameInRow="FInfo_RespEntity2" msprop:Generator_ColumnVarNameInTable="columnFInfo_RespEntity2" msprop:Generator_ColumnPropNameInTable="FInfo_RespEntity2Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_CmdCode" msprop:Generator_UserColumnName="FInfo_CmdCode" msprop:Generator_ColumnPropNameInRow="FInfo_CmdCode" msprop:Generator_ColumnVarNameInTable="columnFInfo_CmdCode" msprop:Generator_ColumnPropNameInTable="FInfo_CmdCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_PartNo" msprop:Generator_UserColumnName="FInfo_PartNo" msprop:Generator_ColumnPropNameInRow="FInfo_PartNo" msprop:Generator_ColumnVarNameInTable="columnFInfo_PartNo" msprop:Generator_ColumnPropNameInTable="FInfo_PartNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_PartName" msprop:Generator_UserColumnName="FInfo_PartName" msprop:Generator_ColumnPropNameInRow="FInfo_PartName" msprop:Generator_ColumnVarNameInTable="columnFInfo_PartName" msprop:Generator_ColumnPropNameInTable="FInfo_PartNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_PartSpec" msprop:Generator_UserColumnName="FInfo_PartSpec" msprop:Generator_ColumnPropNameInRow="FInfo_PartSpec" msprop:Generator_ColumnVarNameInTable="columnFInfo_PartSpec" msprop:Generator_ColumnPropNameInTable="FInfo_PartSpecColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Num" msprop:Generator_UserColumnName="FInfo_Num" msprop:Generator_ColumnPropNameInRow="FInfo_Num" msprop:Generator_ColumnVarNameInTable="columnFInfo_Num" msprop:Generator_ColumnPropNameInTable="FInfo_NumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FInfo_ProdNo" msprop:Generator_UserColumnName="FInfo_ProdNo" msprop:Generator_ColumnPropNameInRow="FInfo_ProdNo" msprop:Generator_ColumnVarNameInTable="columnFInfo_ProdNo" msprop:Generator_ColumnPropNameInTable="FInfo_ProdNoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_FindNode" msprop:Generator_UserColumnName="FInfo_FindNode" msprop:Generator_ColumnPropNameInRow="FInfo_FindNode" msprop:Generator_ColumnVarNameInTable="columnFInfo_FindNode" msprop:Generator_ColumnPropNameInTable="FInfo_FindNodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_FindNodeName" msprop:Generator_UserColumnName="FInfo_FindNodeName" msprop:Generator_ColumnPropNameInRow="FInfo_FindNodeName" msprop:Generator_ColumnVarNameInTable="columnFInfo_FindNodeName" msprop:Generator_ColumnPropNameInTable="FInfo_FindNodeNameColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_RespNode" msprop:Generator_UserColumnName="FInfo_RespNode" msprop:Generator_ColumnPropNameInRow="FInfo_RespNode" msprop:Generator_ColumnVarNameInTable="columnFInfo_RespNode" msprop:Generator_ColumnPropNameInTable="FInfo_RespNodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_RespEntity" msprop:Generator_UserColumnName="FInfo_RespEntity" msprop:Generator_ColumnPropNameInRow="FInfo_RespEntity" msprop:Generator_ColumnVarNameInTable="columnFInfo_RespEntity" msprop:Generator_ColumnPropNameInTable="FInfo_RespEntityColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_TechReq" msprop:Generator_UserColumnName="FInfo_TechReq" msprop:Generator_ColumnPropNameInRow="FInfo_TechReq" msprop:Generator_ColumnVarNameInTable="columnFInfo_TechReq" msprop:Generator_ColumnPropNameInTable="FInfo_TechReqColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_InCompetent" msprop:Generator_UserColumnName="FInfo_InCompetent" msprop:Generator_ColumnPropNameInRow="FInfo_InCompetent" msprop:Generator_ColumnVarNameInTable="columnFInfo_InCompetent" msprop:Generator_ColumnPropNameInTable="FInfo_InCompetentColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Owner" msprop:Generator_UserColumnName="FInfo_Owner" msprop:Generator_ColumnPropNameInRow="FInfo_Owner" msprop:Generator_ColumnVarNameInTable="columnFInfo_Owner" msprop:Generator_ColumnPropNameInTable="FInfo_OwnerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Date" msprop:Generator_UserColumnName="FInfo_Date" msprop:Generator_ColumnPropNameInRow="FInfo_Date" msprop:Generator_ColumnVarNameInTable="columnFInfo_Date" msprop:Generator_ColumnPropNameInTable="FInfo_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FInfo_Process" msprop:Generator_UserColumnName="FInfo_Process" msprop:Generator_ColumnPropNameInRow="FInfo_Process" msprop:Generator_ColumnVarNameInTable="columnFInfo_Process" msprop:Generator_ColumnPropNameInTable="FInfo_ProcessColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_Stat" msprop:Generator_UserColumnName="FInfo_Stat" msprop:Generator_ColumnPropNameInRow="FInfo_Stat" msprop:Generator_ColumnVarNameInTable="columnFInfo_Stat" msprop:Generator_ColumnPropNameInTable="FInfo_StatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_IsCancel" msprop:Generator_UserColumnName="FInfo_IsCancel" msprop:Generator_ColumnPropNameInRow="FInfo_IsCancel" msprop:Generator_ColumnVarNameInTable="columnFInfo_IsCancel" msprop:Generator_ColumnPropNameInTable="FInfo_IsCancelColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FInfo_CancelPep" msprop:Generator_UserColumnName="FInfo_CancelPep" msprop:Generator_ColumnPropNameInRow="FInfo_CancelPep" msprop:Generator_ColumnVarNameInTable="columnFInfo_CancelPep" msprop:Generator_ColumnPropNameInTable="FInfo_CancelPepColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_CancelDate" msprop:Generator_UserColumnName="FInfo_CancelDate" msprop:Generator_ColumnPropNameInRow="FInfo_CancelDate" msprop:Generator_ColumnVarNameInTable="columnFInfo_CancelDate" msprop:Generator_ColumnPropNameInTable="FInfo_CancelDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FInfo_CancelDesp" msprop:Generator_UserColumnName="FInfo_CancelDesp" msprop:Generator_ColumnPropNameInRow="FInfo_CancelDesp" msprop:Generator_ColumnVarNameInTable="columnFInfo_CancelDesp" msprop:Generator_ColumnPropNameInTable="FInfo_CancelDespColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_IsClaim" msprop:Generator_UserColumnName="FInfo_IsClaim" msprop:Generator_ColumnPropNameInRow="FInfo_IsClaim" msprop:Generator_ColumnVarNameInTable="columnFInfo_IsClaim" msprop:Generator_ColumnPropNameInTable="FInfo_IsClaimColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FInfo_ClaimDesp" msprop:Generator_UserColumnName="FInfo_ClaimDesp" msprop:Generator_ColumnPropNameInRow="FInfo_ClaimDesp" msprop:Generator_ColumnVarNameInTable="columnFInfo_ClaimDesp" msprop:Generator_ColumnPropNameInTable="FInfo_ClaimDespColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_ClaimPep" msprop:Generator_UserColumnName="FInfo_ClaimPep" msprop:Generator_ColumnPropNameInRow="FInfo_ClaimPep" msprop:Generator_ColumnVarNameInTable="columnFInfo_ClaimPep" msprop:Generator_ColumnPropNameInTable="FInfo_ClaimPepColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FInfo_ClaimDate" msprop:Generator_UserColumnName="FInfo_ClaimDate" msprop:Generator_ColumnPropNameInRow="FInfo_ClaimDate" msprop:Generator_ColumnVarNameInTable="columnFInfo_ClaimDate" msprop:Generator_ColumnPropNameInTable="FInfo_ClaimDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Stat" msprop:Generator_UserColumnName="Stat" msprop:Generator_ColumnPropNameInRow="Stat" msprop:Generator_ColumnVarNameInTable="columnStat" msprop:Generator_ColumnPropNameInTable="StatColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AuditStat" msprop:Generator_UserColumnName="AuditStat" msprop:Generator_ColumnPropNameInRow="AuditStat" msprop:Generator_ColumnVarNameInTable="columnAuditStat" msprop:Generator_ColumnPropNameInTable="AuditStatColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AuditCurAudit" msprop:Generator_UserColumnName="AuditCurAudit" msprop:Generator_ColumnPropNameInRow="AuditCurAudit" msprop:Generator_ColumnVarNameInTable="columnAuditCurAudit" msprop:Generator_ColumnPropNameInTable="AuditCurAuditColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Failure_Information" />
+      <xs:field xpath="mstns:FInfo_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

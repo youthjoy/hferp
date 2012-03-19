@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[QX.Plugin.Prod.csproj]
+SCC_Aux_Path = "\\192.168.1.222\vssdb"
+SCC_Project_Name = "$/HF_ERP.V2/HF_ERP/QX.Plugin/ProdTask/QX.Plugin.ProdTask", MHEAAAAA

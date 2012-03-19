@@ -1,0 +1,10 @@
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.VerifyProcess.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.VerifyProcess.pdb
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\VerifyProcess\obj\Debug\ResolveAssemblyReference.cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\VerifyProcess\obj\Debug\QX.Plugin.VerifyProcess.CommVerifyNodes.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\VerifyProcess\obj\Debug\QX.Plugin.VerifyProcess.VerifyMain.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\VerifyProcess\obj\Debug\QX.Plugin.VerifyProcess.VerifyNode.resources
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\VerifyProcess\obj\Debug\QX.Plugin.VerifyProcess.csproj.GenerateResource.Cache
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\VerifyProcess\obj\Debug\QX.Plugin.VerifyProcess.dll.licenses
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\VerifyProcess\obj\Debug\QX.Plugin.VerifyProcess.dll
+E:\上海群信\禾丰项目\VSS2\HF_ERP\QX.Plugin\VerifyProcess\obj\Debug\QX.Plugin.VerifyProcess.pdb
