@@ -49,3 +49,16 @@ E:\Code\Project\TFS_HF\QX.DataAceess\bin\Debug\QX.Common.pdb
 E:\Code\Project\TFS_HF\QX.DataAceess\obj\Debug\ResolveAssemblyReference.cache
 E:\Code\Project\TFS_HF\QX.DataAceess\obj\Debug\QX.DataAceess.dll
 E:\Code\Project\TFS_HF\QX.DataAceess\obj\Debug\QX.DataAceess.pdb
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.DataAceess.dll
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.DataAceess.pdb
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.Common.dll
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.DataModel.dll
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.PluginFramework.dll
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\Elixis.dll
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.IMessage.dll
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.DataModel.pdb
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.PluginFramework.pdb
+F:\code\HF_ERP\QX.DataAceess\bin\Debug\QX.Common.pdb
+F:\code\HF_ERP\QX.DataAceess\obj\Debug\ResolveAssemblyReference.cache
+F:\code\HF_ERP\QX.DataAceess\obj\Debug\QX.DataAceess.dll
+F:\code\HF_ERP\QX.DataAceess\obj\Debug\QX.DataAceess.pdb

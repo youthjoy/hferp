@@ -8,3 +8,11 @@ E:\Code\Project\TFS_HF\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.exe
 E:\Code\Project\TFS_HF\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.pdb
 E:\Code\Project\TFS_HF\QX.UI\bin\Debug\QX.UpdateLoader1.exe
 E:\Code\Project\TFS_HF\QX.UI\bin\Debug\QX.UpdateLoader1.pdb
+F:\code\HF_ERP\QX.UI\bin\Debug\QX.UpdateLoader1.exe
+F:\code\HF_ERP\QX.UI\bin\Debug\QX.UpdateLoader1.pdb
+F:\code\HF_ERP\QX.UpdateLoader1\obj\Debug\ResolveAssemblyReference.cache
+F:\code\HF_ERP\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.DownloadProgress.resources
+F:\code\HF_ERP\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.Properties.Resources.resources
+F:\code\HF_ERP\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.csproj.GenerateResource.Cache
+F:\code\HF_ERP\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.exe
+F:\code\HF_ERP\QX.UpdateLoader1\obj\Debug\QX.UpdateLoader1.pdb

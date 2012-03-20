@@ -15,16 +15,16 @@
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
         <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the 
-          requestedExecutionLevel node with one of the following.
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请
+          用下面的某一项替换 requestedExecutionLevel 节点。
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward 
-         compatibility then delete the requestedExecutionLevel node.
+         如果要利用文件和注册表虚拟化实现向后
+         兼容，请删除 requestedExecutionLevel 节点。
     -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
@@ -299,14 +299,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QX.BLL.dll" size="136704">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QX.BLL.dll" size="137728">
       <assemblyIdentity name="QX.BLL" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>EFqBrHkmGC5Af55TOdctcTccd5c=</dsig:DigestValue>
+        <dsig:DigestValue>riqjkfOn/tzRY0nwqpHT3M373To=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -318,19 +318,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>u9i/w+DvSL8TtR8LKzVxzZ56Euk=</dsig:DigestValue>
+        <dsig:DigestValue>AAE5OGaWOchhNvtMHmTA0w24bds=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QX.Common.dll" size="218624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QX.Common.dll" size="216064">
       <assemblyIdentity name="QX.Common" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>cnNkyIBjoFIOLcSO5oL+r3LptRo=</dsig:DigestValue>
+        <dsig:DigestValue>O9dRKcI5d904mW9NiW3G296BwXQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -342,7 +342,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>5UWWwxW7lVecUVVan1xCw0WHRyY=</dsig:DigestValue>
+        <dsig:DigestValue>Y/0AVXSkSkGw9VabAilwmmvoYuM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -354,7 +354,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PqXCJluB3Y0s7w8poE/uBAsHAcA=</dsig:DigestValue>
+        <dsig:DigestValue>bSav4uYMjITXLFtRqWNjLIg5Lgo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -366,7 +366,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>GEsM9EXxA+FpOkQVyRIchv6O2JE=</dsig:DigestValue>
+        <dsig:DigestValue>2SHQEd8ltDuctOqIyCUZxsi8Xqc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -390,7 +390,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>SdxzapHnhjYLpkfZPicM4rfdfJA=</dsig:DigestValue>
+        <dsig:DigestValue>ijLoGKVgdUAtKMCB53fkNpMedFc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -414,19 +414,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>nqNq1GtHoE34QBNZCcqluyWNh40=</dsig:DigestValue>
+        <dsig:DigestValue>lA/rh+NCg6Wq7B5xsEfEKmS0sA8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QX.UI.exe" size="185344">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="QX.UI.exe" size="185856">
       <assemblyIdentity name="QX.UI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jxOmQS0I4DLEZGNy7h9MYlV2bHU=</dsig:DigestValue>
+        <dsig:DigestValue>K6NGYvpfA4/F1sUVInEXFK8VKKM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

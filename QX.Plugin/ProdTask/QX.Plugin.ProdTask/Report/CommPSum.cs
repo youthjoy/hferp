@@ -192,7 +192,7 @@ namespace QX.Plugin.Prod.Report
             {
                 uGridData = gridHelper.GenerateGrid(MapData[0], this.panel1, new Point(0, 0));
 
-                gridHelper.SetGridReadOnly(uGridData, true);
+             //   gridHelper.SetGridReadOnly(uGridData, true);
 
                 gridHelper.SetExcelStyleFilter(uGridData);
             }

@@ -518,6 +518,14 @@ namespace QX.BLL
             return re;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="plan"></param>
+        /// <param name="inf"></param>
+        /// <param name="nodestr"></param>
+        /// <param name="nodelist"></param>
+        /// <returns></returns>
         public bool BatchEnterFHelper(Prod_PlanProd plan,FHelper_Info inf, string nodestr,string nodelist)
         {
             ////外协处理流程

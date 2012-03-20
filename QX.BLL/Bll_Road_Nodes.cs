@@ -5,6 +5,7 @@ using QX.DataModel;
 using QX.DataAceess;
 using QX.Common.C_Class;
 using System.Linq;
+using QX.Shared;
 namespace QX.BLL
 {
     public class Bll_Road_Nodes
@@ -26,7 +27,21 @@ namespace QX.BLL
             RtInstance.idb.SetConnection(Instance.idb.GetConnection());
         }
 
+        public List<Road_Nodes> GetNodeListForBatchPrice(string comp, string node)
+        { 
+            return Instance.GetListByWhere(string.Format("AND RNodes_PartCode like '%{0}%' AND RNodes_Name like '%{1}%'",comp,node));
+        }
 
+        public bool BatchUpdateNodes(List<Road_Nodes> list)
+        {
+            foreach (var d in list)
+            {
+               // d.RNodes_Udef3 +=DateTime.Now.ToString("yyyy-MM-dd")+"  "+SessionConfig.EmpName+" 批量调整价格";
+                Instance.Update(d);
+            }
+
+            return true;
+        }
 
         public List<Road_Nodes> GetAll()
         {

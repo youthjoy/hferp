@@ -42,6 +42,7 @@ namespace QX.Plugin.RoadCateManage
         GridHelper gen=new GridHelper();
         public void BindEvent()
         {
+            ToolStripHelper tsHelper=new ToolStripHelper();
             #region toolbar事件初始化
             this.tbMyList.AddClicked += new EventHandler(this.btnAdd_Click);
             this.tbMyList.EditClicked += new EventHandler(this.btnEdit_Click);
@@ -49,6 +50,10 @@ namespace QX.Plugin.RoadCateManage
             this.tbMyList.QueryClicked += new EventHandler(tbMyList_QueryClicked);
             this.tbMyList.RefreshClicked += new EventHandler(this.btnRefresh_Click);
 
+            ToolStripButton batchPrice = tsHelper.New("批量调价", QX.Common.Properties.Resources.batch, new EventHandler(batchPrice_Click));
+           // batchPrice.Click += new EventHandler(batchPrice_Click);
+            batchPrice.Name = "batchPrice";
+            this.tbMyList.AddCustomControl(batchPrice);
 
             //ToolStripButton tButton = new ToolStripButton();
             //tButton.Text = "工艺维护";
@@ -110,7 +115,7 @@ namespace QX.Plugin.RoadCateManage
 
             #endregion
 
-            ToolStripHelper tsHelper = new ToolStripHelper();
+            //ToolStripHelper tsHelper = new ToolStripHelper();
             #region TreeView Toolbar
 
             this.commTreeTool.RefreshClicked += new EventHandler(this.tvRefresh_Click);
@@ -151,6 +156,12 @@ namespace QX.Plugin.RoadCateManage
             this.tbTrash.HistoryClicked += new EventHandler(tbTrash_HistoryClicked);
             #endregion
 
+        }
+
+        void batchPrice_Click(object sender, EventArgs e)
+        {
+            BatchCompNode compNodeFrm = new BatchCompNode();
+            compNodeFrm.ShowDialog();
         }
 
         void exportBtn_Click(object sender, EventArgs e)

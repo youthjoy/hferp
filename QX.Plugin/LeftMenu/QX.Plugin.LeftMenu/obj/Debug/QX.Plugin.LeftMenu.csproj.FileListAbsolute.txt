@@ -24,3 +24,10 @@ E:\Code\Project\TFS_HF\QX.Plugin\LeftMenu\QX.Plugin.LeftMenu\obj\Debug\ResolveAs
 E:\Code\Project\TFS_HF\QX.Plugin\LeftMenu\QX.Plugin.LeftMenu\obj\Debug\QX.Plugin.LeftMenu.dll.licenses
 E:\Code\Project\TFS_HF\QX.Plugin\LeftMenu\QX.Plugin.LeftMenu\obj\Debug\QX.Plugin.LeftMenu.dll
 E:\Code\Project\TFS_HF\QX.Plugin\LeftMenu\QX.Plugin.LeftMenu\obj\Debug\QX.Plugin.LeftMenu.pdb
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.LeftMenu.dll.config
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.LeftMenu.dll
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.LeftMenu.pdb
+F:\code\HF_ERP\QX.Plugin\LeftMenu\QX.Plugin.LeftMenu\obj\Debug\ResolveAssemblyReference.cache
+F:\code\HF_ERP\QX.Plugin\LeftMenu\QX.Plugin.LeftMenu\obj\Debug\QX.Plugin.LeftMenu.dll.licenses
+F:\code\HF_ERP\QX.Plugin\LeftMenu\QX.Plugin.LeftMenu\obj\Debug\QX.Plugin.LeftMenu.dll
+F:\code\HF_ERP\QX.Plugin\LeftMenu\QX.Plugin.LeftMenu\obj\Debug\QX.Plugin.LeftMenu.pdb

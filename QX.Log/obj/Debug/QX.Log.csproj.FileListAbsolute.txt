@@ -30,3 +30,9 @@ E:\Code\Project\TFS_HF\QX.Log\bin\Debug\log4net.dll
 E:\Code\Project\TFS_HF\QX.Log\obj\Debug\ResolveAssemblyReference.cache
 E:\Code\Project\TFS_HF\QX.Log\obj\Debug\QX.Log.dll
 E:\Code\Project\TFS_HF\QX.Log\obj\Debug\QX.Log.pdb
+F:\code\HF_ERP\QX.Log\bin\Debug\QX.Log.dll
+F:\code\HF_ERP\QX.Log\bin\Debug\QX.Log.pdb
+F:\code\HF_ERP\QX.Log\bin\Debug\log4net.dll
+F:\code\HF_ERP\QX.Log\obj\Debug\ResolveAssemblyReference.cache
+F:\code\HF_ERP\QX.Log\obj\Debug\QX.Log.dll
+F:\code\HF_ERP\QX.Log\obj\Debug\QX.Log.pdb

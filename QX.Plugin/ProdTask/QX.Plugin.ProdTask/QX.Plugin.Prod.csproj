@@ -84,6 +84,12 @@
     <Compile Include="Component\AuditedRoadNodes.Designer.cs">
       <DependentUpon>AuditedRoadNodes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Component\BatchCompNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Component\BatchCompNode.Designer.cs">
+      <DependentUpon>BatchCompNode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component\CLog.cs" />
     <Compile Include="Component\CompOpLog.cs">
       <SubType>Form</SubType>
@@ -724,6 +730,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Component\AuditedRoadNodes.resx">
       <DependentUpon>AuditedRoadNodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\BatchCompNode.resx">
+      <DependentUpon>BatchCompNode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Component\CompOpLog.resx">
       <DependentUpon>CompOpLog.cs</DependentUpon>

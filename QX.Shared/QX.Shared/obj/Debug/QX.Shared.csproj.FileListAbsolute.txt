@@ -42,3 +42,16 @@ E:\Code\Project\TFS_HF\QX.Shared\QX.Shared\bin\Debug\QX.Common.pdb
 E:\Code\Project\TFS_HF\QX.Shared\QX.Shared\obj\Debug\ResolveAssemblyReference.cache
 E:\Code\Project\TFS_HF\QX.Shared\QX.Shared\obj\Debug\QX.Shared.dll
 E:\Code\Project\TFS_HF\QX.Shared\QX.Shared\obj\Debug\QX.Shared.pdb
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.Shared.dll
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.Shared.pdb
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.DataModel.dll
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.PluginFramework.dll
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.IMessage.dll
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.Common.dll
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\Elixis.dll
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.PluginFramework.pdb
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.DataModel.pdb
+F:\code\HF_ERP\QX.Shared\QX.Shared\bin\Debug\QX.Common.pdb
+F:\code\HF_ERP\QX.Shared\QX.Shared\obj\Debug\ResolveAssemblyReference.cache
+F:\code\HF_ERP\QX.Shared\QX.Shared\obj\Debug\QX.Shared.dll
+F:\code\HF_ERP\QX.Shared\QX.Shared\obj\Debug\QX.Shared.pdb

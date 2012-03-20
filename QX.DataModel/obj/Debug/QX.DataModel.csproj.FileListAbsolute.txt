@@ -41,3 +41,14 @@ E:\Code\Project\TFS_HF\QX.DataModel\bin\Debug\QX.Common.pdb
 E:\Code\Project\TFS_HF\QX.DataModel\obj\Debug\ResolveAssemblyReference.cache
 E:\Code\Project\TFS_HF\QX.DataModel\obj\Debug\QX.DataModel.dll
 E:\Code\Project\TFS_HF\QX.DataModel\obj\Debug\QX.DataModel.pdb
+F:\code\HF_ERP\QX.DataModel\bin\Debug\QX.DataModel.dll
+F:\code\HF_ERP\QX.DataModel\bin\Debug\QX.DataModel.pdb
+F:\code\HF_ERP\QX.DataModel\bin\Debug\QX.Common.dll
+F:\code\HF_ERP\QX.DataModel\bin\Debug\QX.PluginFramework.dll
+F:\code\HF_ERP\QX.DataModel\bin\Debug\Elixis.dll
+F:\code\HF_ERP\QX.DataModel\bin\Debug\QX.IMessage.dll
+F:\code\HF_ERP\QX.DataModel\bin\Debug\QX.PluginFramework.pdb
+F:\code\HF_ERP\QX.DataModel\bin\Debug\QX.Common.pdb
+F:\code\HF_ERP\QX.DataModel\obj\Debug\ResolveAssemblyReference.cache
+F:\code\HF_ERP\QX.DataModel\obj\Debug\QX.DataModel.dll
+F:\code\HF_ERP\QX.DataModel\obj\Debug\QX.DataModel.pdb

@@ -44,3 +44,15 @@ E:\Code\Project\TFS_HF\QX.Plugin\TopMenu\obj\Debug\ResolveAssemblyReference.cach
 E:\Code\Project\TFS_HF\QX.Plugin\TopMenu\obj\Debug\QX.Plugin.TopMenuStrip.dll
 E:\Code\Project\TFS_HF\QX.Plugin\TopMenu\obj\Debug\QX.Plugin.TopMenuStrip.pdb
 E:\Code\Project\TFS_HF\QX.UI\bin\Debug\AddIns\QX.Plugin.TopMenuStrip.tlb
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\Data\TopMenu.xml
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\Data\LeftMenu.xml
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\ftp.xml
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\version.xml
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\app.config
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\Data\chinese.ini
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.TopMenuStrip.dll
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.TopMenuStrip.pdb
+F:\code\HF_ERP\QX.UI\bin\Debug\AddIns\QX.Plugin.TopMenuStrip.tlb
+F:\code\HF_ERP\QX.Plugin\TopMenu\obj\Debug\ResolveAssemblyReference.cache
+F:\code\HF_ERP\QX.Plugin\TopMenu\obj\Debug\QX.Plugin.TopMenuStrip.dll
+F:\code\HF_ERP\QX.Plugin\TopMenu\obj\Debug\QX.Plugin.TopMenuStrip.pdb
