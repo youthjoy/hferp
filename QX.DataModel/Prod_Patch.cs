@@ -127,9 +127,9 @@ namespace QX.DataModel
          get{ return stat_IsChanged; }
          set{ stat_IsChanged = value; }
       }
-      private int pP_IsMain;
+      private string pP_IsMain;
       private bool pP_IsMain_IsChanged=false;
-      public int PP_IsMain
+      public string PP_IsMain
       {
          get{ return pP_IsMain; }
          set{ pP_IsMain = value; pP_IsMain_IsChanged=true; }
@@ -138,6 +138,54 @@ namespace QX.DataModel
       {
          get{ return pP_IsMain_IsChanged; }
          set{ pP_IsMain_IsChanged = value; }
+      }
+      private int pP_Level;
+      private bool pP_Level_IsChanged=false;
+      public int PP_Level
+      {
+         get{ return pP_Level; }
+         set{ pP_Level = value; pP_Level_IsChanged=true; }
+      }
+      public bool PP_Level_IsChanged
+      {
+         get{ return pP_Level_IsChanged; }
+         set{ pP_Level_IsChanged = value; }
+      }
+      private string pP_Udef1;
+      private bool pP_Udef1_IsChanged=false;
+      public string PP_Udef1
+      {
+         get{ return pP_Udef1; }
+         set{ pP_Udef1 = value; pP_Udef1_IsChanged=true; }
+      }
+      public bool PP_Udef1_IsChanged
+      {
+         get{ return pP_Udef1_IsChanged; }
+         set{ pP_Udef1_IsChanged = value; }
+      }
+      private string pP_Udef2;
+      private bool pP_Udef2_IsChanged=false;
+      public string PP_Udef2
+      {
+         get{ return pP_Udef2; }
+         set{ pP_Udef2 = value; pP_Udef2_IsChanged=true; }
+      }
+      public bool PP_Udef2_IsChanged
+      {
+         get{ return pP_Udef2_IsChanged; }
+         set{ pP_Udef2_IsChanged = value; }
+      }
+      private string pP_Udef3;
+      private bool pP_Udef3_IsChanged=false;
+      public string PP_Udef3
+      {
+         get{ return pP_Udef3; }
+         set{ pP_Udef3 = value; pP_Udef3_IsChanged=true; }
+      }
+      public bool PP_Udef3_IsChanged
+      {
+         get{ return pP_Udef3_IsChanged; }
+         set{ pP_Udef3_IsChanged = value; }
       }
    }
 }

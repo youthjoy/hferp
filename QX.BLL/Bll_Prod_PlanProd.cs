@@ -101,17 +101,17 @@ namespace QX.BLL
             return Instance.GetListByWhereForContract(where);
         }
 
-        
+
 
         public List<Prod_PlanProd> GetPlanProdListForSearch(string key)
         {
-            string where = string.Format(" AND (PlanProd_CmdCode like '%{0}%' OR PlanProd_Code like '%{0}%' OR PlanProd_PartName like '%{0}%' OR PlanProd_PartNo like '%{0}%')",key);
+            string where = string.Format(" AND (PlanProd_CmdCode like '%{0}%' OR PlanProd_Code like '%{0}%' OR PlanProd_PartName like '%{0}%' OR PlanProd_PartNo like '%{0}%')", key);
             return Instance.GetListByWherePatch(where);
         }
 
-        public List<Prod_PlanProd> GetPlanProdListForSearch(string bDate,string eDate,string key)
+        public List<Prod_PlanProd> GetPlanProdListForSearch(string bDate, string eDate, string key)
         {
-            string where = string.Format(" AND Task_Date between '{1}' and '{2}' AND (PlanProd_CmdCode like '%{0}%' OR PlanProd_Code like '%{0}%' OR PlanProd_PartName like '%{0}%' OR PlanProd_PartNo like '%{0}%')", key,bDate,eDate);
+            string where = string.Format(" AND Task_Date between '{1}' and '{2}' AND (PlanProd_CmdCode like '%{0}%' OR PlanProd_Code like '%{0}%' OR PlanProd_PartName like '%{0}%' OR PlanProd_PartNo like '%{0}%')", key, bDate, eDate);
             return Instance.GetListByWherePatch(where);
         }
 
@@ -137,7 +137,7 @@ namespace QX.BLL
         {
             string where = string.Format("AND SDR_DetailCode ='{0}'", key);
 
-            List<SD_CRProdCode> list= crInstance.GetListByWhere(where);
+            List<SD_CRProdCode> list = crInstance.GetListByWhere(where);
 
             List<Prod_PlanProd> list1 = new List<Prod_PlanProd>();
 
@@ -199,7 +199,10 @@ namespace QX.BLL
         {
             int count = list.Count;
             List<Prod_Patch> oldList = GetPlanProdListForPatchByModule(module);
-            var mainProd=list.FirstOrDefault(o=>o.PP_Type=="PatchType002");
+            var mainProd = list.FirstOrDefault(o => o.PP_Type == "PatchType002");
+
+            int level = GetLevel(list, oldList);
+
             foreach (var n in oldList)
             {
                 var temp = list.FirstOrDefault(o => o.PP_ID == n.PP_ID);
@@ -213,7 +216,7 @@ namespace QX.BLL
                 else
                 {
                     n.Stat = 1;
-                
+
                     ppaInstance.Update(n);
 
                     Prod_PlanProd p = GetModelByKey(n.PP_PlanCode);
@@ -226,6 +229,8 @@ namespace QX.BLL
             foreach (var t in list)
             {
                 t.PP_Module = module;
+
+                t.PP_Level = level;
                 ppaInstance.Add(t);
 
 
@@ -259,9 +264,36 @@ namespace QX.BLL
             return true;
         }
 
+        public int GetLevel(List<Prod_Patch> newlist, List<Prod_Patch> oldlist)
+        {
+            StringBuilder sb = new StringBuilder();
+            
+            foreach (var d in newlist)
+            {
+                sb.AppendFormat("'{0}',", d.PP_PlanCode);
+            }
+
+            var temp = ppaInstance.GetListByWhere(string.Format(" AND PP_PlanCode in ({0})", sb.ToString().TrimEnd(',')));
+            //count 为0  表示其为新增
+            if (oldlist.Count == 0)
+            {
+
+                ///0 表示从未配对  假设已经存在配对，则该配对模块全部为n+1级别
+                var l = temp.Max(o => o.PP_Level);
+
+                return l + 1;
+            }
+            else
+            {
+                var l = oldlist.FirstOrDefault().PP_Level;
+                return l;
+            }
+
+        }
+
         public bool UpdatePatch(Prod_Patch p)
         {
-            if (ppaInstance.Update(p)>0)
+            if (ppaInstance.Update(p) > 0)
             {
                 return true;
             }
@@ -288,17 +320,17 @@ namespace QX.BLL
         /// <returns></returns>
         public bool TrashProd(Prod_PlanProd plan)
         {
-            var inv=invInstance.GetInvByPlanCode(plan.PlanProd_PlanCode);
+            var inv = invInstance.GetInvByPlanCode(plan.PlanProd_PlanCode);
             inv.IInfor_ProdStat = OperationTypeEnum.ProdStatEnum.Defective.ToString();
             inv.IInfor_CustBak = SessionConfig.EmpName + "手动作废  " + DateTime.Now.ToString();
-            plan.PlanProd_Bak = SessionConfig.EmpName + "手动作废  "+ DateTime.Now.ToString();
+            plan.PlanProd_Bak = SessionConfig.EmpName + "手动作废  " + DateTime.Now.ToString();
 
             Instance.Update(plan);
 
             return invInstance.Update(inv);
         }
 
-        public bool UpdatePatch(string code,List<Prod_PlanProd> list)
+        public bool UpdatePatch(string code, List<Prod_PlanProd> list)
         {
             List<Prod_PlanProd> oldlist = GetPatchList(code);
             foreach (var d in oldlist)
@@ -333,7 +365,7 @@ namespace QX.BLL
         public List<Prod_PlanProd> GetPatchList(string code)
         {
 
-            string where = string.Format(" AND isnull(PlanProd_Patch,'')='{0}'  order by PlanProd_Code",code);
+            string where = string.Format(" AND isnull(PlanProd_Patch,'')='{0}'  order by PlanProd_Code", code);
 
             return Instance.GetListByWhere(where);
         }
@@ -543,7 +575,7 @@ namespace QX.BLL
                 prInstance.Instance.idb.BeginTransaction(Instance.idb.GetTransaction());
 
 
-                
+
                 int oldNum = prodTask.Task_DNum;
                 //如果下发完了则到已计划列表中区
                 if (prodTask.TaskDetail_Num <= prodTask.Task_DNum)
@@ -669,8 +701,8 @@ namespace QX.BLL
         public List<Prod_PlanProd> GetTrashList(string bdate, string edate, string key)
         {
             List<Prod_PlanProd> list = new List<Prod_PlanProd>();
-            var where=string.Format(" ");
-            list=Instance.GetListByWhere(where);
+            var where = string.Format(" ");
+            list = Instance.GetListByWhere(where);
             return list;
         }
     }

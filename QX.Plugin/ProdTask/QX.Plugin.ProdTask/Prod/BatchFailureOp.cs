@@ -124,32 +124,40 @@ namespace QX.Plugin.Prod
             UltraGridRow r = this.comGrid.ActiveRow;
             if (r != null&&Alert.ShowIsConfirm("确定要取消该零件报废状态?"))
             {
-                Failure_Relation fr = r.ListObject as Failure_Relation;
-                fr.FR_Stat = "Normal";
-                mainInstance.StatChange(fr);
-
+             
                 //如果已经终审则进行零件产品的状态扭转
                 if (GModel.AuditStat == OperationTypeEnum.AudtiOperaTypeEnum.LastAudit.ToString())
                 {
+
+                    Failure_Relation fr = r.ListObject as Failure_Relation;
+                    fr.FR_Stat = "Normal";
+                    mainInstance.StatChange(fr);
+
                     ///报废回用（撤销零件的不合格状态 
                     Inv_Information inv = invInstance.GetInvByPlanCode(fr.FR_PlanCode);
                     inv.IInfor_ProdStat = QX.Common.C_Class.OperationTypeEnum.ProdStatEnum.Normal.ToString();
                     invInstance.Update(inv);
-                }
 
-                QX.Log.PlateLog.WriteOp(QX.Shared.SessionConfig.UserCode
+                    QX.Log.PlateLog.WriteOp(QX.Shared.SessionConfig.UserCode
 , QX.Shared.SessionConfig.UserName
 , "localhost"
 , this.Name
-, DateTime.Now.ToString() + "," + QX.Shared.SessionConfig.UserName + QX.Common.MessageContent.GetInstance().FailureReturn+"("+fr.FR_ProdCode+")"
+, DateTime.Now.ToString() + "," + QX.Shared.SessionConfig.UserName + QX.Common.MessageContent.GetInstance().FailureReturn + "(" + fr.FR_ProdCode + ")"
 , QX.Log.PlateLog.LogMessageType.Info, QX.Common.LogModule.Failure.ToString(), QX.Common.LogType.Edit.ToString());
 
 
-                Alert.Show("回用完成!");
+                    Alert.Show("回用完成!");
+                }
+                else
+                {
+                    Alert.Show("零件还在审核流程中，不能进行状态扭转!");
+                }
+
+        
             }
         }
         /// <summary>
-        /// 状态扭转
+        /// 状态扭转（扭转只是Relation表的数据变动，最终的零件产品状态扭转在审核流程结束后进行扭转
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -169,9 +177,11 @@ namespace QX.Plugin.Prod
         void statSelFrm_CallBack(object sender, object stat)
         {
             var rows = this.comGrid.Selected.Rows;
-            string s = stat.ToString();
 
+            string s = stat.ToString();
+            
             StringBuilder sb = new StringBuilder();
+
             foreach (var r in rows)
             {
                 Failure_Relation fr = r.ListObject as Failure_Relation;
@@ -187,7 +197,7 @@ namespace QX.Plugin.Prod
 , DateTime.Now.ToString() + "," + QX.Shared.SessionConfig.UserName + QX.Common.MessageContent.GetInstance().FailureReturn + "(" + sb.ToString() + s+")"
 , QX.Log.PlateLog.LogMessageType.Info, QX.Common.LogModule.Failure.ToString(), QX.Common.LogType.Edit.ToString());
 
-
+            Alert.Show("状态扭转完成！");
         }
 
         private Bll_Audit auInstance = new Bll_Audit();

@@ -17,6 +17,9 @@ namespace QX.Plugin.Prod
 {
     public partial class ProdPatch : F_BasicPop
     {
+        /// <summary>
+        /// 产品配对
+        /// </summary>
         public ProdPatch()
         {
             InitializeComponent();
@@ -39,7 +42,9 @@ namespace QX.Plugin.Prod
             this.Load += new EventHandler(ProdPatch_Load);
         }
 
-
+        /// <summary>
+        /// 当前选中的零件产品
+        /// </summary>
         public Prod_PlanProd CurProd
         {
             get;
@@ -219,6 +224,9 @@ namespace QX.Plugin.Prod
 
         List<Prod_PlanProd> DataSource = new List<Prod_PlanProd>();
 
+        /// <summary>
+        /// 主件
+        /// </summary>
         public string CurModule
         {
             get;
@@ -238,13 +246,14 @@ namespace QX.Plugin.Prod
             comGrid = gen.GenerateGrid("CList_ProdPatch", this.panel1, new Point(0, 0));
 
             //comGrid.BeforeRowsDeleted+=new BeforeRowsDeletedEventHandler(comGrid_BeforeRowsDeleted);
-
-            list = ppInstance.GetPlanProdListForPatch(CurProd.PlanProd_PlanCode);
+            ///根据当前选择的零件获取其相关的配对零件产品
+            list = ppInstance.GetPlanProdListForPatch(CurProd.PlanProd_PlanCode).OrderByDescending(o=>o.PP_Level).ToList();
             List<Prod_Patch> list1 = new List<Prod_Patch>();
             if (list.Count != 0)
             {
+                ///根据当前零件所在的配对组的模块编号获取关联的零件产品
                 list1 = ppInstance.GetPlanProdListForPatchByModule(list[0].PP_Module);
-
+                //初始化模块编号
                 CurModule = list[0].PP_Module;
 
                 BindingSource DataSource = new BindingSource();

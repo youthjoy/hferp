@@ -553,7 +553,7 @@ namespace QX.Plugin.RoadCateManage
                           , QX.Shared.SessionConfig.UserName
                           , "localhost"
                           , this.Name
-                          , DateTime.Now.ToString() + "," + QX.Shared.SessionConfig.UserName + QX.Common.MessageContent.GetInstance().Components
+                          , DateTime.Now.ToString() + "," + QX.Shared.SessionConfig.UserName + QX.Common.MessageContent.GetInstance().Components+"   "+CurrentRoadCompt.Comp_Code
                           , QX.Log.PlateLog.LogMessageType.Info, QX.Common.LogModule.Components.ToString(), QX.Common.LogType.Edit.ToString());
 
 

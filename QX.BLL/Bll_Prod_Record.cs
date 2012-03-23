@@ -26,7 +26,7 @@ namespace QX.BLL
 
         private Bll_Audit auInstance = new Bll_Audit();
 
-        
+
 
         private Bll_FHelper_Info infoInstance = new Bll_FHelper_Info();
 
@@ -48,7 +48,7 @@ namespace QX.BLL
             return list;
         }
 
-   
+
 
         /// <summary>
         /// 获取待处理的生产任务（即在生产的零件）
@@ -457,14 +457,14 @@ namespace QX.BLL
         public bool EnterFHelper(Prod_Roads pr)
         {
             //外协处理流程
-            FHelper_Info info1 = infoInstance.GetModel(string.Format(" AND FHelperInfo_ProdCode='{0}' AND isnull(FHelperInfo_Stat,'')<>'Done' ",pr.PRoad_ProdCode));
+            FHelper_Info info1 = infoInstance.GetModel(string.Format(" AND FHelperInfo_ProdCode='{0}' AND isnull(FHelperInfo_Stat,'')<>'Done' ", pr.PRoad_ProdCode));
             if (info1 != null)
             {
                 return false;
             }
             //外协处理流程
             FHelper_Info info = new FHelper_Info();
-            
+
             info.FHelperInfo_Code = infoInstance.GenerateCode();
 
             //零件图号
@@ -526,7 +526,7 @@ namespace QX.BLL
         /// <param name="nodestr"></param>
         /// <param name="nodelist"></param>
         /// <returns></returns>
-        public bool BatchEnterFHelper(Prod_PlanProd plan,FHelper_Info inf, string nodestr,string nodelist)
+        public bool BatchEnterFHelper(Prod_PlanProd plan, FHelper_Info inf, string nodestr, string nodelist)
         {
             ////外协处理流程
             //FHelper_Info info1 = infoInstance.GetModel(string.Format(" AND FHelperInfo_ProdCode='{0}' AND isnull(FHelperInfo_Stat,'')<>'Done' ", pr.PRoad_ProdCode));
@@ -538,7 +538,7 @@ namespace QX.BLL
             //外协处理流程
             FHelper_Info info = new FHelper_Info();
             info.FHelperInfo_FSup = inf.FHelperInfo_FSup;
-            
+
             info.FHelperInfo_Code = infoInstance.GenerateCode();
 
             //零件图号
@@ -566,8 +566,8 @@ namespace QX.BLL
 
             MethodInvoker mi = delegate
             {
-                
-                
+
+
                 price.FP_CompName = plan.PlanProd_PartName;
                 BLL.Bll_FHelper_Price fpInst = new Bll_FHelper_Price();
                 price.FP_Code = fpInst.GenerateFPCode();
@@ -611,7 +611,7 @@ namespace QX.BLL
             {
                 var pr = roads.FirstOrDefault(o => o.PRoad_NodeCode == nodeCode);
                 var nextRoad = roads.FirstOrDefault(o => o.PRoad_Order > pr.PRoad_Order);
-                
+
                 //如果存在下一阶段
                 if (nextRoad != null)
                 {
@@ -643,7 +643,7 @@ namespace QX.BLL
             {
                 return;
             }
-            string[] dd=nodeCode.Split(',');
+            string[] dd = nodeCode.Split(',');
 
             var roads = prInstance.GetPlanRoadList(plan.PlanProd_PlanCode);
 
@@ -672,35 +672,39 @@ namespace QX.BLL
                     //}
                 }
 
-                
+
             }
 
         }
 
         /// <summary>
-        /// 配对组件入库
+        /// 配对组件入库---需重点重新改造
         /// </summary>
         /// <param name="list"></param>
         public void EnterStockForPatchProd(List<Inv_Information> list)
         {
             foreach (var inv in list)
             {
-              var p=  ppInstance.GetProdModel(string.Format(" AND PlanProd_PlanCode='{0}'",inv.IInfor_PlanCode));
-              if (!string.IsNullOrEmpty(p.PlanProd_Patch))
-              {
-                  List<Prod_PlanProd> list1 = ppInstance.GetPatchList(p.PlanProd_Patch);
-                  //把其余几个零件一起做入库操作
-                  foreach (var pp in list1)
-                  {
-        
-                      if (pp.PlanProd_MPatchCode != p.PlanProd_Code)
-                      {
-                          var inv1=invInstance.GetInvByPlanCode(pp.PlanProd_PlanCode);
-                          invInstance.InventoryInvInfo(inv1);
-                      }
-                  }
-              }
+                var p = ppInstance.GetProdModel(string.Format(" AND PlanProd_PlanCode='{0}'", inv.IInfor_PlanCode));
+                //零件关联的模块编码
+               // var plist = ppInstance.GetPlanProdListForPatch(p.PlanProd_PlanCode);
+                //question  如何遍历？ 策略
+
+                if (!string.IsNullOrEmpty(p.PlanProd_Patch))
+                {
+                    List<Prod_PlanProd> list1 = ppInstance.GetPatchList(p.PlanProd_Patch);
+                    //把其余几个零件一起做入库操作
+                    foreach (var pp in list1)
+                    {
+
+                        if (pp.PlanProd_MPatchCode != p.PlanProd_Code)
+                        {
+                            var inv1 = invInstance.GetInvByPlanCode(pp.PlanProd_PlanCode);
+                            invInstance.InventoryInvInfo(inv1);
+                        }
+                    }
+                }
             }
-       }
+        }
     }
 }

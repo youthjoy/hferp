@@ -605,7 +605,7 @@ namespace QX.Plugin.Prod
         }
 
         /// <summary>
-        /// 批量质检
+        /// 批量完工
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -999,7 +999,7 @@ namespace QX.Plugin.Prod
                 {
                     Alert.Show("当前生产产品已报废，不能更新其数据!");
                     flag = false;
-                }
+                }//PlanProd_MPatchCode记录的是当前零件所在组件配对里面其主零件编号
                 else if (!string.IsNullOrEmpty(plan.PlanProd_Patch) && plan.PlanProd_PlanCode != plan.PlanProd_MPatchCode)
                 {
                     Alert.Show(string.Format("当前产品已组合配对!"));

@@ -687,6 +687,7 @@ namespace QX.Plugin.Prod
         /// <summary>
         /// 审核回调函数(思路（先进行流程判断（ComFauditMain里面判断）是否进入返工OR报废）-->如果需要返工返修OR报废则对零件分别进行处理
         ///                                                                       -->如果不需要返工OR报废则根据处理方法批量更新产品状态)
+        ///                                                                       
         /// </summary>
         /// <param name="re"></param>
         /// <param name="AStat"></param>
@@ -724,7 +725,7 @@ namespace QX.Plugin.Prod
                             {
                                 Alert.Show("审理完成!");
                             }
-                        }//适配以前的数据
+                        }//end  适配以前的数据
                         else
                         {
                             var map = MapSource.FirstOrDefault(o => o.Map_Object1 == model.AuditCurAudit);
