@@ -43,6 +43,12 @@ namespace QX.BLL
             return true;
         }
 
+        public List<Road_Nodes> GetNodeListByWhere(string sCondition)
+        {
+            return Instance.GetListByWhere(sCondition);
+        }
+
+
         public List<Road_Nodes> GetAll()
         {
             return Instance.GetAll();

@@ -18,3 +18,8 @@ E:\Code\Project\TFS_HF\QX.IPlugin\bin\Debug\QX.PluginFramework.pdb
 E:\Code\Project\TFS_HF\QX.IPlugin\obj\Debug\ResolveAssemblyReference.cache
 E:\Code\Project\TFS_HF\QX.IPlugin\obj\Debug\QX.PluginFramework.dll
 E:\Code\Project\TFS_HF\QX.IPlugin\obj\Debug\QX.PluginFramework.pdb
+F:\code\HF_ERP\QX.IPlugin\bin\Debug\QX.PluginFramework.dll
+F:\code\HF_ERP\QX.IPlugin\bin\Debug\QX.PluginFramework.pdb
+F:\code\HF_ERP\QX.IPlugin\obj\Debug\ResolveAssemblyReference.cache
+F:\code\HF_ERP\QX.IPlugin\obj\Debug\QX.PluginFramework.dll
+F:\code\HF_ERP\QX.IPlugin\obj\Debug\QX.PluginFramework.pdb

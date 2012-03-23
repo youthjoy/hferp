@@ -20,6 +20,12 @@ namespace QX.BLL
             return list;
         }
 
+        public List<SD_Customer> GetCustomerByWhere(string filter)
+        {
+            List<SD_Customer> list = instance.GetListByWhere(filter);
+            return list;
+        }
+
 
         public List<SD_Customer> GetCustomerByType(string type)
         {
@@ -28,11 +34,11 @@ namespace QX.BLL
             list = instance.GetListByWhere(where);
             return list;
         }
-        public List<SD_Customer> GetCustomerByWhere(string filter)
-        {
-            List<SD_Customer> list = instance.GetAll();
-            return list;
-        }
+        //public List<SD_Customer> GetCustomerByWhere(string filter)
+        //{
+        //    List<SD_Customer> list = instance.GetAll();
+        //    return list;
+        //}
 
         /// <summary>
         /// 插入数据

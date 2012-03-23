@@ -12,6 +12,12 @@ namespace QX.BLL
     {
         private DataAceess.ADORoad_Components _Instance;
 
+        public List<Road_Components> GetComponentsByWhere(string where)
+        {
+            return Instance.GetListByWhereExtend(where);
+        }
+
+
         public DataAceess.ADORoad_Components Instance
         {
             get
